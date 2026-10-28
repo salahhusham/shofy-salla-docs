@@ -226,6 +226,7 @@ h1 {
 
 .guide {
   padding: 28px 0 72px;
+  scroll-margin-top: calc(var(--header) + 12px);
 }
 
 .card h2,
@@ -293,6 +294,8 @@ h1 {
 }
 
 .badge {
+  /* الأرقام فوق الكروت مخفية مؤقتًا. امسح display: none لو عايز ترجعها. */
+  display: none;
   width: max-content;
   min-width: 52px;
   height: 32px;
