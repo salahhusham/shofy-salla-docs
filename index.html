@@ -3,494 +3,649 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="دليل دعم توضيحي لسكاشن ثيم المتجر: صورة كل سكشن، اسمه، ووصفه، مع طرق التواصل مع الدعم.">
-  <meta name="theme-color" content="#f3f0ea">
-  <title>دليل سكاشن المتجر | Shofiy</title>
+  <meta name="description" content="دليل استخدام ثيم شوفاي على سلة: السكاشن، صفحات المتجر، ومقاسات الصور كما هي في الثيم.">
+  <meta name="theme-color" content="#f4f1eb">
+  <title>دليل ثيم شوفاي | Salla</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body id="top">
-  <a class="skip" href="#guide">تخطي إلى السكاشن</a>
-
+  <a class="skip" href="#sections">تخطي إلى السكاشن</a>
   <header class="site-header">
-    
     <div class="header-inner">
       <a class="brand" href="#top" aria-label="العودة لبداية الدليل">
         <img src="https://salahhusham.github.io/shofy-salla-docs/Shofiy_Logo.png" width="512" height="132" alt="شعار شوفاي">
       </a>
-      <nav class="header-nav" aria-label="تنقل الصفحة">
-        <a href="#guide">السكاشن</a>
+      <label class="finder">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="m16 15.2 4 4-1.4 1.4-4-4z"/></svg>
+        <input id="guide-search" type="search" placeholder="ابحث عن سكشن أو صفحة" aria-label="بحث في الدليل">
+      </label>
+      <nav class="header-nav" aria-label="تنقل الدليل">
+        <a href="#sections">السكاشن</a>
+        <a href="#sizes">المقاسات</a>
         <a class="header-cta" href="#contact">تواصل معنا</a>
       </nav>
     </div>
   </header>
-
   <main>
     <section class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">ملف دعم توضيحي للعميل</p>
-          <h1>سكاشن الثيم <span class="gradient-text">بالصورة والشرح</span></h1>
-          <p class="lede">الدليل ده بيعرض محتوى الصفحة الرئيسية كما يظهر داخل المتجر. لكل سكشن صورة، وتحته اسمه، وتحته وصف ليه موجود وإزاي يفيد الزائر. وفي آخر الصفحة تلاقي طرق التواصل مع الدعم.</p>
-     
-        </div>
-        <div class="hero-collage" aria-hidden="true">
-          <img src="https://salahhusham.github.io/shofy-salla-docs/imges/2.jpeg" alt="">
-          <img src="https://salahhusham.github.io/shofy-salla-docs/imges/11.jpeg" alt="">
-          <img src="https://salahhusham.github.io/shofy-salla-docs/imges/15.jpeg" alt="">
-        </div>
+      <div class="wrap">
+        <p class="eyebrow">دليل الثيم حسب الكود الفعلي</p>
+        <h1>دليل متجر <span class="gradient-text">شوفاي</span></h1>
+        <p class="lede">الأسماء والمقاسات هنا مأخوذة من إعدادات مكوّنات الثيم وقالب الصفحة الرئيسية. اللقطات من 1 إلى 31 لسكاشن الواجهة. أي مقاس غير مكتوب في الإعداد مذكور كتلميح عرض فقط، وليس شرط رفع.</p>
       </div>
     </section>
-
-    <section class="guide" id="guide">
-      <div class="wrap">
-        <!--
-          عايز تعدّل محتوى؟ عدّل هنا في index.html جوه كل <article class="card">:
-          - الصورة: src="https://salahhusham.github.io/shofy-salla-docs/imges/رقم.jpeg"
-          - الاسم: جوه <h2> وفي alt بتاع الصورة
-          - الوصف: جوه <p>
-          عايز تضيف سكشن: انسخ بلوك <article> كامل والصقه تحت آخر سكشن وغيّر الرقم والاسم والصورة والوصف.
-          عايز تحذف سكشن: امسح بلوك <article> بتاعه من أول السطر لحد </article>.
-          الألوان والمسافات وأحجام الخط: في ملف style.css مش هنا.
-        -->
-        <div class="gallery">
-          <article class="card" id="sec-1">
-            <span class="badge">01</span>
+    <div class="wrap layout">
+      <nav class="toc" aria-label="أقسام الدليل">
+        <a href="#sections">سكاشن الرئيسية</a>
+        <a href="#more">سكاشن بلا لقطة</a>
+        <a href="#pages">صفحات المتجر</a>
+        <a href="#sizes">مقاسات الصور</a>
+        <a href="#contact">التواصل</a>
+      </nav>
+      <div>
+        <section class="guide" id="sections">
+          <div class="section-head">
+            <h2>سكاشن الصفحة الرئيسية</h2>
+            <p>كل بطاقة فيها لقطة، اسم المكوّن كما في الثيم، ماذا يفعل، وأين يجد الزائر التفاعل. الترتيب هو ترتيب صور الدليل، وليس ترتيبًا إجباريًا داخل المتجر. ترتيب الظهور يحدده التاجر من محرر الثيم.</p>
+          </div>
+          <div class="gallery" id="gallery">
+<article class="card" id="sec-1" data-name="شريط إعلانات">
             <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/1.jpeg" alt="بنرات">
+              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/1.jpeg" alt="شريط إعلانات">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
-              <h2>بنرات</h2>
-            <p>شريط بعرض الصفحة يكرر رسالة واحدة بشكل متحرك، مثل تهنئة موسمية أو جملة عرض. مكانه في أعلى المتجر، وبيمسك انتباه الزائر من أول لحظة قبل ما ينزل يشوف المنتجات.</p>
+              <p class="kicker">سكشن 1 · الصفحة الرئيسية</p>
+              <h2>شريط إعلانات</h2>
+              <p>اللقطة شريط نص يتحرك، وليست شبكة البنرات. في الثيم شريط إعدادات باسم «شريط الإعلانات»، ومكوّن رئيسي باسم «شريط التنبيهات». الأيقونة اختيارية.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>يظهر أعلى الصفحة ويكرر الرسالة. الزائر يقرأها أثناء التصفح، والضغط يفتح الرابط إن وُجد.</dd></div>
+                <div><dt>الصورة</dt><dd>لا يوجد مقاس رفع للنص. أيقونة شريط التنبيهات في القالب 26×26 بكسل، وهذا تلميح عرض وليس شرط رفع.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-2">
-            <span class="badge">02</span>
+<article class="card" id="sec-2" data-name="سلايدر صور">
             <button class="shot" type="button">
               <img src="https://salahhusham.github.io/shofy-salla-docs/imges/2.jpeg" alt="سلايدر صور" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
+              <p class="kicker">سكشن 2 · الصفحة الرئيسية</p>
               <h2>سلايدر صور</h2>
-            <p>المساحة الأكبر في الرئيسية: صورة حملة واسعة، عنوان، وزر تسوق، مع أسهم للتنقل بين الشرائح. أنسب مكان للعرض الأقوى أو التشكيلة الجديدة اللي حابب العميل يشوفها أول شيء.</p>
+              <p>صورة عريضة مع أسهم للتنقل بين الشرائح.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط السهم أو ينتظر الحركة ثم يفتح رابط الشريحة.</dd></div>
+                <div><dt>الصورة</dt><dd>في وصف الإعداد: 1669×668 للشاشة الكبيرة، و768×566 للجوال. وسم الصورة في القالب عرضه 1670 بدون طول ثابت.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-3">
-            <span class="badge">03</span>
+<article class="card" id="sec-3" data-name="روابط سريعة">
             <button class="shot" type="button">
               <img src="https://salahhusham.github.io/shofy-salla-docs/imges/3.jpeg" alt="روابط سريعة" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
+              <p class="kicker">سكشن 3 · الصفحة الرئيسية</p>
               <h2>روابط سريعة</h2>
-            <p>دوائر مصوّرة لاختصارات الأقسام والمنتجات الأكثر طلباً، مثل الشنط والعطور والساعات والتخفيضات. الزائر يوصل للقسم بضغطة واحدة من غير ما يدور جوه القائمة.</p>
+              <p>اختصارات مصورة لأقسام أو روابط.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط الدائرة أو الصورة للانتقال.</dd></div>
+                <div><dt>الصورة</dt><dd>لا يوجد مقاس مكتوب في الإعداد. وسم الصورة في القالب 106×155، وهو تلميح عرض فقط.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-4">
-            <span class="badge">04</span>
+<article class="card" id="sec-4" data-name="خصومات شكل 2">
             <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/4.jpeg" alt="خصومات شكل2" loading="lazy">
+              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/4.jpeg" alt="خصومات شكل 2" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
-              <h2>خصومات شكل2</h2>
-            <p>بانر عروض مؤقتة فيه عدّاد للأيام والساعات والدقائق والثواني، وزر «تسوق الآن». بيستخدم لما يكون الخصم مرتبط بوقت، عشان الزائر يحس إن العرض هينتهي ويتحرك للشراء.</p>
+              <p class="kicker">سكشن 4 · الصفحة الرئيسية</p>
+              <h2>خصومات شكل 2</h2>
+              <p>صورة مع عنوان وعداد تنازلي وزر، إن فُعّلت هذه الحقول.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يرى الوقت المتبقي ويضغط زر العرض.</dd></div>
+                <div><dt>الصورة</dt><dd>لا يوجد مقاس مكتوب في الإعداد. وسم الصورة 550×350. طريقة العرض من إعداد «عرض الصورة بالكامل» أو «كغلاف»، ولا يُقص المقاس تلقائيًا.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-5">
-            <span class="badge">05</span>
+<article class="card" id="sec-5" data-name="منتجات متحركة">
             <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/5.jpeg" alt="منتجات متحركه" loading="lazy">
+              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/5.jpeg" alt="منتجات متحركة" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
-              <h2>منتجات متحركه</h2>
-            <p>سلايدر منتجات يتحرك بالعرض، ويعرض صورة المنتج والسعر وخيارات التقسيط وشارة «يباع سريعاً». مناسب للتشكيلات الرائجة، والزائر يقدر يتصفح منتجات أكتر من غير ما يغادر الصفحة.</p>
+              <p class="kicker">سكشن 5 · الصفحة الرئيسية</p>
+              <h2>منتجات متحركة</h2>
+              <p>سلايدر منتجات. الصور تأتي من صور المنتجات نفسها، وليس من مقاس بانر خاص.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يسحب السلايدر ويفتح المنتج أو يضيفه للسلة إن ظهر الزر.</dd></div>
+                <div><dt>الصورة</dt><dd>نسبة بطاقة المنتج من إعداد «طول صورة المنتج»، وليست مقاس رفع بالبكسل. التفاصيل في جدول المقاسات.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-6">
-            <span class="badge">06</span>
+<article class="card" id="sec-6" data-name="بنرات">
             <button class="shot" type="button">
               <img src="https://salahhusham.github.io/shofy-salla-docs/imges/6.jpeg" alt="بنرات" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
+              <p class="kicker">سكشن 6 · الصفحة الرئيسية</p>
               <h2>بنرات</h2>
-            <p>شبكة بنرات بأكتر من مقاس، كل بنر لحملة أو علامة أو نسبة خصم. الزائر يدخل على مجموعة مختلفة من كل صورة، فبتقدر تبرز أكتر من عرض في نفس المكان.</p>
+              <p>مجموعة صور، كل صورة لها رابط، مع صورة منفصلة للجوال.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط البانر للانتقال. إن وُجدت صورة الجوال تظهر تحت 768 بكسل.</dd></div>
+                <div><dt>الصورة</dt><dd>في وصف الإعداد: 2881×961 للكبير، و768×983 للجوال. وسم الصورة في القالب 1800×450 ولا يفرض القص.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-7">
-            <span class="badge">07</span>
+<article class="card" id="sec-7" data-name="منتجات مميزة">
             <button class="shot" type="button">
               <img src="https://salahhusham.github.io/shofy-salla-docs/imges/7.jpeg" alt="منتجات مميزة" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
+              <p class="kicker">سكشن 7 · الصفحة الرئيسية</p>
               <h2>منتجات مميزة</h2>
-            <p>بطاقات عريضة لمنتجات مختارة: الصورة، وصف مختصر، وسائل الدفع، وزر «أضف إلى السلة» في نفس البطاقة. مناسبة للمنتجات الأكثر طلباً اللي حابب تبيعها بشكل أوضح.</p>
+              <p>بطاقات منتجات مختارة بصورة وسعر وزر إضافة.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يفتح المنتج أو يضيفه للسلة من البطاقة.</dd></div>
+                <div><dt>الصورة</dt><dd>تستخدم نسبة صورة المنتج في إعدادات الثيم. لا يوجد مقاس بانر مستقل لهذا المكوّن.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-8">
-            <span class="badge">08</span>
+<article class="card" id="sec-8" data-name="صور مربعة">
             <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/8.jpeg" alt="صور مربعه" loading="lazy">
+              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/8.jpeg" alt="صور مربعة" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
-              <h2>صور مربعه</h2>
-            <p>شبكة صور بمربعات ومستطيلات تعرض التصنيفات بشكل بصري حر، مثل الملابس والأحذية والعطور. كل صورة عليها اسم القسم، والضغط عليها ينقل الزائر للتصنيف مباشرة.</p>
+              <p class="kicker">سكشن 8 · الصفحة الرئيسية</p>
+              <h2>صور مربعة</h2>
+              <p>شبكة صور بعناوين وروابط.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط المربع ليفتح القسم.</dd></div>
+                <div><dt>الصورة</dt><dd>لا يوجد مقاس مكتوب في الإعداد. وسم الصورة في القالب 200×200.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-9">
-            <span class="badge">09</span>
+<article class="card" id="sec-9" data-name="مقارنة">
             <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/9.jpeg" alt="مقارنه" loading="lazy">
+              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/9.jpeg" alt="مقارنة" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
-              <h2>مقارنه</h2>
-            <p>قسم قبل وبعد مع سلايدر مقارنة، وعنوان ووصف وزر تسوق. مناسب لمنتجات العناية والنتائج الظاهرة، عشان العميل يشوف الفرق بنفسه قبل ما يقرر.</p>
+              <p class="kicker">سكشن 9 · الصفحة الرئيسية</p>
+              <h2>مقارنة</h2>
+              <p>صورتان للمقارنة، مع عنوان وزر.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يحرّك فاصل المقارنة ثم يضغط زر التسوق.</dd></div>
+                <div><dt>الصورة</dt><dd>لا يوجد مقاس مكتوب في الإعداد. كل صورة في القالب عليها 500×500 كتلميح عرض.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-10">
-            <span class="badge">10</span>
+<article class="card" id="sec-10" data-name="منتجات بتبويبات">
             <button class="shot" type="button">
               <img src="https://salahhusham.github.io/shofy-salla-docs/imges/10.jpeg" alt="منتجات بتبويبات" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
+              <p class="kicker">سكشن 10 · الصفحة الرئيسية</p>
               <h2>منتجات بتبويبات</h2>
-            <p>عرض منتجات مقسوم على تبويبات مثل الإلكترونيات والعطور والأزياء والملابس. التبديل بين التبويبات يغيّر المنتجات من غير مغادرة الصفحة، فبتقدر تجمع أكتر من تشكيلة في سكشن واحد.</p>
+              <p>تبويبات تبدّل مجموعة المنتجات دون مغادرة الصفحة.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط اسم التبويب ثم يفتح منتجًا.</dd></div>
+                <div><dt>الصورة</dt><dd>صور المنتجات تتبع نسبة بطاقة المنتج، وليس مقاسًا ثابتًا لهذا المكوّن.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-11">
-            <span class="badge">11</span>
+<article class="card" id="sec-11" data-name="اسلايدر ونصوص">
             <button class="shot" type="button">
               <img src="https://salahhusham.github.io/shofy-salla-docs/imges/11.jpeg" alt="اسلايدر ونصوص" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
+              <p class="kicker">سكشن 11 · الصفحة الرئيسية</p>
               <h2>اسلايدر ونصوص</h2>
-            <p>شريحة هادئة تجمع صورة المنتج مع عنوان ونص تسويقي وزر تسوق. تصلح لحكاية مجموعة معيّنة أو منتج حابب تبرزه بهدوء، مع إمكانية التنقل بين الشرائح.</p>
+              <p>شريحة فيها صورة وعنوان ونص وزر.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يتنقل بين الشرائح ويضغط زر التسوق.</dd></div>
+                <div><dt>الصورة</dt><dd>في وصف الإعداد: 634×372. وسم الصورة في القالب 500×372.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-12">
-            <span class="badge">12</span>
+<article class="card" id="sec-12" data-name="شريط التنبيهات">
             <button class="shot" type="button">
               <img src="https://salahhusham.github.io/shofy-salla-docs/imges/12.jpeg" alt="شريط التنبيهات" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
+              <p class="kicker">سكشن 12 · الصفحة الرئيسية</p>
               <h2>شريط التنبيهات</h2>
-            <p>شريط رفيع متحرك يعرض مميزات المتجر في سطر واحد، مثل التقسيط عبر تمارا وتابي والشحن المجاني. بيمرّر أكتر من رسالة، والزائر يقرأها وهو بيتصفح.</p>
+              <p>نص متحرك، وأيقونة اختيارية، ولون خلفية ونص.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>أعلى محتوى الصفحة أو حسب ترتيب المكوّنات. الضغط يفتح الرابط إن أُدخل.</dd></div>
+                <div><dt>الصورة</dt><dd>لا يوجد مقاس مكتوب في الإعداد. الأيقونة في القالب 26×26.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-13">
-            <span class="badge">13</span>
+<article class="card" id="sec-13" data-name="تصنيفات ثابتة">
             <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/13.jpeg" alt="تصنيفات ثابته" loading="lazy">
+              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/13.jpeg" alt="تصنيفات ثابتة" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
-              <h2>تصنيفات ثابته</h2>
-            <p>شبكة دوائر ثابتة لا تتحرك. كل دائرة بصورة، وتحتها اسم التصنيف ووصف قصير. بتدي الزائر خريطة واضحة لكل أقسام المتجر من العناية والعطور لحد الحقائب والبطاقات.</p>
+              <p class="kicker">سكشن 13 · الصفحة الرئيسية</p>
+              <h2>تصنيفات ثابتة</h2>
+              <p>دوائر لا تتحرك، تحتها الاسم.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط الدائرة ليفتح التصنيف.</dd></div>
+                <div><dt>الصورة</dt><dd>في وصف الإعداد: 200×200. وسم الصورة في القالب 96×96، فالصورة تُصغَّر عند العرض.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-14">
-            <span class="badge">14</span>
+<article class="card" id="sec-14" data-name="تصنيفات ومميزات">
             <button class="shot" type="button">
               <img src="https://salahhusham.github.io/shofy-salla-docs/imges/14.jpeg" alt="تصنيفات ومميزات" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
+              <p class="kicker">سكشن 14 · الصفحة الرئيسية</p>
               <h2>تصنيفات ومميزات</h2>
-            <p>شريط داكن يجمع كود الخصم مع أيقونات التصنيفات مثل الملابس والنظارات. يذكّر العميل بالعرض، وفي نفس الوقت يفتح له أقسام المتجر من مكان واحد.</p>
+              <p>صورة كبيرة مع أيقونات تصنيفات.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط التصنيف أو الصورة.</dd></div>
+                <div><dt>الصورة</dt><dd>لا يوجد مقاس مكتوب في الإعداد. القالب يضع 180×175 للصورة الكبيرة و54×54 للأيقونة.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-15">
-            <span class="badge">15</span>
+<article class="card" id="sec-15" data-name="فيديو">
             <button class="shot" type="button">
               <img src="https://salahhusham.github.io/shofy-salla-docs/imges/15.jpeg" alt="فيديو" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
+              <p class="kicker">سكشن 15 · الصفحة الرئيسية</p>
               <h2>فيديو</h2>
-            <p>مساحة فيديو كبيرة بعرض الصفحة، وفوقها عنوان ووصف وزر تسوق. أقوى طريقة لعرض حملة أو تشكيلة بشكل حي، بدل الاعتماد على صورة ثابتة فقط.</p>
+              <p>فيديو بعرض القسم مع عنوان ووصف وزر.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الفيديو يعمل صامتًا ومتكررًا حسب القالب، والزر ينقل للرابط.</dd></div>
+                <div><dt>الصورة</dt><dd>في وصف الإعداد: 1669×771. هذا مقاس الفيديو المذكور في الإعداد وليس قصًا إجباريًا من الكود.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-16">
-            <span class="badge">16</span>
+<article class="card" id="sec-16" data-name="ماركات شكل 2">
             <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/16.jpeg" alt="ماركات شكل2" loading="lazy">
+              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/16.jpeg" alt="ماركات شكل 2" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
-              <h2>ماركات شكل2</h2>
-              <p>شريط متحرك لشعارات الماركات ووسائل الدفع مثل فيزا ومدى وآبل باي. بيثبّت ثقة الزائر في المتجر وهو بيتصفح الصفحة.</p>
+              <p class="kicker">سكشن 16 · الصفحة الرئيسية</p>
+              <h2>ماركات شكل 2</h2>
+              <p>شعارات تتحرك.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يرى الشعار، والرابط يفتح إن أُضيف في العنصر.</dd></div>
+                <div><dt>الصورة</dt><dd>في وصف الإعداد: 100×100. وسم الصورة في القالب 80×80.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-17">
-            <span class="badge">17</span>
+<article class="card" id="sec-17" data-name="روابط سريعة شكل 3">
             <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/17.jpeg" alt="روابط سريعة شكل3" loading="lazy">
+              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/17.jpeg" alt="روابط سريعة شكل 3" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
-              <h2>روابط سريعة شكل3</h2>
-              <p>بنران كبيران جنب بعض، كل واحد بصورة وعنوان وزر تسوق. مناسب لتقسيم الزائر بين مجموعتين، مثل العطور النسائية والرجالية.</p>
+              <p class="kicker">سكشن 17 · الصفحة الرئيسية</p>
+              <h2>روابط سريعة شكل 3</h2>
+              <p>صور كبيرة بعناوين وأزرار.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط الصورة أو الزر.</dd></div>
+                <div><dt>الصورة</dt><dd>في وصف الإعداد: 600×496. وسم الصورة في القالب 600×600، لذلك النسبة في الإعداد تختلف عن وسم العرض.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-18">
-            <span class="badge">18</span>
+<article class="card" id="sec-18" data-name="من نحن">
             <button class="shot" type="button">
               <img src="https://salahhusham.github.io/shofy-salla-docs/imges/18.jpeg" alt="من نحن" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
+              <p class="kicker">سكشن 18 · الصفحة الرئيسية</p>
               <h2>من نحن</h2>
-              <p>مساحة تجمع صورة المنتج مع عنوان وفقرة تعريف وزر تسوق. بتستخدمها تحكي قصة المنتج أو المتجر وتدي الزائر سبب يثق ويشتري.</p>
+              <p>صورة أو فيديو مع عنوان ونص وزر.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يقرأ النص ويضغط زر التسوق.</dd></div>
+                <div><dt>الصورة</dt><dd>في وصف الإعداد: 600 عرض × 462 طول. وسم الصورة في القالب 500×500.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-19">
-            <span class="badge">19</span>
+<article class="card" id="sec-19" data-name="بنر ومنتجات">
             <button class="shot" type="button">
               <img src="https://salahhusham.github.io/shofy-salla-docs/imges/19.jpeg" alt="بنر ومنتجات" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
+              <p class="kicker">سكشن 19 · الصفحة الرئيسية</p>
               <h2>بنر ومنتجات</h2>
-              <p>بنر جانبي كبير مع سلايدر منتجات في نفس السطر. البنر يوجّه لحملة، والمنتجات تعرض التشكيلة المرتبطة بيها مع السعر والتقسيط.</p>
+              <p>بانر جانبي بجانب سلايدر منتجات.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط البانر أو يفتح منتجًا من السلايدر.</dd></div>
+                <div><dt>الصورة</dt><dd>في وصف الإعداد: 727×1000. وسم الصورة في القالب 350×450.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-20">
-            <span class="badge">20</span>
+<article class="card" id="sec-20" data-name="مجموعة صور">
             <button class="shot" type="button">
               <img src="https://salahhusham.github.io/shofy-salla-docs/imges/20.jpeg" alt="مجموعة صور" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
+              <p class="kicker">سكشن 20 · الصفحة الرئيسية</p>
               <h2>مجموعة صور</h2>
-              <p>سلايدر صور لأقسام أو غرف، كل صورة بعنوان وعدد المنتجات. الزائر يختار المجموعة من الصورة مباشرة من غير ما يدور في القائمة.</p>
+              <p>سلايدر صور بعناوين.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يختار الصورة.</dd></div>
+                <div><dt>الصورة</dt><dd>في وصف الإعداد: 400×533. وسم الصورة في القالب 250×350.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-21">
-            <span class="badge">21</span>
+<article class="card" id="sec-21" data-name="روابط سريعة شكل 2">
             <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/21.jpeg" alt="روابط سريعة شكل2" loading="lazy">
+              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/21.jpeg" alt="روابط سريعة شكل 2" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
-              <h2>روابط سريعة شكل2</h2>
-              <p>ثلاث صور كبيرة بعناوين واضحة تحت عنوان المجموعة. كل صورة رابط سريع لقسم، وبتناسب عرض كولكشن أو موسم في نظرة واحدة.</p>
+              <p class="kicker">سكشن 21 · الصفحة الرئيسية</p>
+              <h2>روابط سريعة شكل 2</h2>
+              <p>صور روابط تحت عنوان المجموعة.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط الصورة.</dd></div>
+                <div><dt>الصورة</dt><dd>في وصف الإعداد: 600×496. وسم الصورة في القالب 500×500.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-22">
-            <span class="badge">22</span>
+<article class="card" id="sec-22" data-name="روابط ومميزات">
             <button class="shot" type="button">
               <img src="https://salahhusham.github.io/shofy-salla-docs/imges/22.jpeg" alt="روابط ومميزات" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
+              <p class="kicker">سكشن 22 · الصفحة الرئيسية</p>
               <h2>روابط ومميزات</h2>
-              <p>قائمة روابط مصوّرة على الجانبين مع صورة في النص. كل سطر اسم قسم ووصف قصير، فبتقدر تعرض حلول المتجر وتفتح كل قسم من مكان واحد.</p>
+              <p>صورة في الوسط وقائمة روابط بأيقونات على الجانبين.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط سطر القسم.</dd></div>
+                <div><dt>الصورة</dt><dd>في وصف الإعداد: الصورة الرئيسية 446×500، والأيقونة 80×80. القالب يعرض الرئيسية بـ 300×500 والأيقونة بـ 80×80.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-23">
-            <span class="badge">23</span>
+<article class="card" id="sec-23" data-name="العروض والخصومات">
             <button class="shot" type="button">
               <img src="https://salahhusham.github.io/shofy-salla-docs/imges/23.jpeg" alt="العروض والخصومات" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
+              <p class="kicker">سكشن 23 · الصفحة الرئيسية</p>
               <h2>العروض والخصومات</h2>
-              <p>بانر عريض لعرض محدود بعدّاد للأيام والساعات والدقائق والثواني. بيستخدم لما الخصم مرتبط بوقت، عشان الزائر يتحرك قبل ما العرض يخلص.</p>
+              <p>خلفية بصورة مع عنوان وعداد.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يرى العدّاد. الصورة خلفية وليست بطاقة مستقلة.</dd></div>
+                <div><dt>الصورة</dt><dd>لا يوجد مقاس مكتوب في الإعداد. الصورة تُستخدم كخلفية CSS، والقالب لا يحدد عرضًا أو طولًا بالبكسل.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-24">
-            <span class="badge">24</span>
+<article class="card" id="sec-24" data-name="عناصر بنرات ونصوص">
             <button class="shot" type="button">
               <img src="https://salahhusham.github.io/shofy-salla-docs/imges/24.jpeg" alt="عناصر بنرات ونصوص" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
+              <p class="kicker">سكشن 24 · الصفحة الرئيسية</p>
               <h2>عناصر بنرات ونصوص</h2>
-              <p>ثلاث بطاقات ملونة، كل بطاقة فيها صورة منتج وعنوان ونسبة خصم وزر تسوق. مناسبة لعرض أكتر من عرض في نفس السطر.</p>
+              <p>بطاقات فيها صورة ونص وزر.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط البطاقة.</dd></div>
+                <div><dt>الصورة</dt><dd>في وصف الإعداد: 1132×792. وسم الصورة في القالب 300×300، فالعرض يصغّر الصورة.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-25">
-            <span class="badge">25</span>
+<article class="card" id="sec-25" data-name="الماركات التجارية">
             <button class="shot" type="button">
               <img src="https://salahhusham.github.io/shofy-salla-docs/imges/25.jpeg" alt="الماركات التجارية" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
+              <p class="kicker">سكشن 25 · الصفحة الرئيسية</p>
               <h2>الماركات التجارية</h2>
-              <p>دوائر لشعارات الماركات وتحتها اسم كل ماركة. الزائر يفتح منتجات العلامة بضغطة، وبيقدر يشوف كل الماركات من رابط عرض الكل.</p>
+              <p>شعارات الماركات المسجلة في المتجر، وليست صورًا تُرفع داخل المكوّن فقط.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط الشعار ليفتح منتجات الماركة.</dd></div>
+                <div><dt>الصورة</dt><dd>لا يوجد مقاس مكتوب في الإعداد. وسم الشعار في القالب 125×125.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-26">
-            <span class="badge">26</span>
+<article class="card" id="sec-26" data-name="المدونة">
             <button class="shot" type="button">
               <img src="https://salahhusham.github.io/shofy-salla-docs/imges/26.jpeg" alt="المدونة" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
+              <p class="kicker">سكشن 26 · الصفحة الرئيسية</p>
               <h2>المدونة</h2>
-              <p>بطاقات مقالات بصورة وعنوان وملخص وزر قراءة المزيد. بتستخدمها تعرض محتوى المتجر أو أخبار المنتجات وتخلّي الزائر يكمل القراءة.</p>
+              <p>بطاقات مقالات بصورة وعنوان.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية، والمقال الكامل في صفحة المدونة. الزائر يضغط «قراءة المزيد».</dd></div>
+                <div><dt>الصورة</dt><dd>وسم صورة المقال في هذا المكوّن 350×350. سلايدر المدونة في صفحة المقالات ارتفاعه 300 بكسل، ويصبح 400 من عرض 768 فأكثر. لا يوجد شرط رفع بالبكسل.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-27">
-            <span class="badge">27</span>
+<article class="card" id="sec-27" data-name="منتجات متحركة مع خلفية">
             <button class="shot" type="button">
               <img src="https://salahhusham.github.io/shofy-salla-docs/imges/27.jpeg" alt="منتجات متحركة مع خلفية" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
+              <p class="kicker">سكشن 27 · الصفحة الرئيسية</p>
               <h2>منتجات متحركة مع خلفية</h2>
-              <p>سلايدر منتجات فوق خلفية مصورة، مع عنوان ونسبة خصم. بيجمع شكل الحملة مع المنتجات الرائجة في سكشن واحد يتحرك بالعرض.</p>
+              <p>خلفية مع سلايدر منتجات.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يتصفح المنتجات فوق الخلفية.</dd></div>
+                <div><dt>الصورة</dt><dd>في وصف الإعداد: خلفية 1233×500. صور المنتجات تتبع نسبة بطاقة المنتج.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-28">
-            <span class="badge">28</span>
+<article class="card" id="sec-28" data-name="الاسئلة الشائعة">
             <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/28.jpeg" alt="الاسئلة الشائعه" loading="lazy">
+              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/28.jpeg" alt="الاسئلة الشائعة" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
-              <h2>الاسئلة الشائعه</h2>
-              <p>أسئلة وإجابات قابلة للفتح، مثل الشحن والضمان والإرجاع. بتقلل استفسارات العميل وتوضّح سياسة المتجر من غير ما يسيب الصفحة.</p>
+              <p class="kicker">سكشن 28 · الصفحة الرئيسية</p>
+              <h2>الاسئلة الشائعة</h2>
+              <p>أسئلة تُفتح وتُغلق.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط السؤال ليقرأ الإجابة.</dd></div>
+                <div><dt>الصورة</dt><dd>لا يستخدم صورة.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-29">
-            <span class="badge">29</span>
+<article class="card" id="sec-29" data-name="تواصل معنا">
             <button class="shot" type="button">
               <img src="https://salahhusham.github.io/shofy-salla-docs/imges/29.jpeg" alt="تواصل معنا" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
+              <p class="kicker">سكشن 29 · الصفحة الرئيسية</p>
               <h2>تواصل معنا</h2>
-              <p>شريط بيانات التواصل: العنوان، الجوال، البريد، ورابط المساعدة، مع ساعات العمل. الزائر يوصل لك مباشرة من الصفحة الرئيسية.</p>
+              <p>نص، بريد، جوال، عنوان، وخريطة إن أُدخلت.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. البيانات نصوص يكتبها التاجر في إعداد المكوّن، وليست بريدًا ثابتًا داخل ملف الثيم.</dd></div>
+                <div><dt>الصورة</dt><dd>خريطة العرض ارتفاعها 450 بكسل في القالب. لا يوجد مقاس صورة.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-30">
-            <span class="badge">30</span>
+<article class="card" id="sec-30" data-name="الفروع">
             <button class="shot" type="button">
               <img src="https://salahhusham.github.io/shofy-salla-docs/imges/30.jpeg" alt="الفروع" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
+              <p class="kicker">سكشن 30 · الصفحة الرئيسية</p>
               <h2>الفروع</h2>
-              <p>خريطة للفروع مع تبويبات للتنقل بين المدن. العميل يشوف مكان الفرع على الخريطة ويختار المدينة من غير ما يغادر المتجر.</p>
+              <p>تبويبات مدن مع خريطة.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يبدل المدينة فتظهر الخريطة.</dd></div>
+                <div><dt>الصورة</dt><dd>إطار الخريطة عرضه 100% وارتفاعه 450 بكسل. لا يوجد مقاس صورة.</dd></div>
+              </dl>
             </div>
           </article>
-
-          <article class="card" id="sec-31">
-            <span class="badge">31</span>
+<article class="card" id="sec-31" data-name="خصائص المتجر">
             <button class="shot" type="button">
               <img src="https://salahhusham.github.io/shofy-salla-docs/imges/31.jpeg" alt="خصائص المتجر" loading="lazy">
               <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
             </button>
             <div class="card-copy">
+              <p class="kicker">سكشن 31 · الصفحة الرئيسية</p>
               <h2>خصائص المتجر</h2>
-              <p>أيقونات لمميزات المتجر مثل التوصيل والدعم والضمان واسترداد الأموال. بتطمن الزائر قبل الشراء وتلخص ليه يشتري منك.</p>
+              <p>أيقونات لمميزات مثل الشحن والدعم.</p>
+              <dl class="facts">
+                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يقرأ الميزة، والعنصر ليس زر شراء.</dd></div>
+                <div><dt>الصورة</dt><dd>في وصف الإعداد: يُفضَّل 120×120. وسم الصورة في القالب 60×60.</dd></div>
+              </dl>
             </div>
           </article>
-        </div>
-      </div>
-    </section>
-  </main>
+          </div>
+          <p class="empty" id="empty-cards">لا توجد نتيجة مطابقة للبحث.</p>
+        </section>
 
+        <section class="guide" id="more">
+          <div class="section-head">
+            <h2>سكاشن موجودة في الثيم بدون لقطة هنا</h2>
+            <p>هذه المكوّنات معرفة في الثيم، ولم تُرفق لها صورة في مجلد الدليل. الشرح من الملفات فقط.</p>
+          </div>
+          <div class="extra-grid">
+<article class="extra-card" data-name="نقاط منتجات">
+              <h3>نقاط منتجات</h3>
+              <p>يعرض منتجات النقاط مع بانر. وسم البانر في القالب 1200×550، وصورة المنتج داخله 60×60. لا يوجد مقاس رفع مكتوب في الإعداد.</p>
+              <p>لا توجد لقطة في هذا الدليل لهذا المكوّن. </p>
+            </article>
+<article class="extra-card" data-name="اسلايدر مميز">
+              <h3>اسلايدر مميز</h3>
+              <p>سلايدر صور أو فيديو. الإعداد يقول إن الصور والفيديوهات لازم تكون بنفس المقاس، بدون رقم بكسل. وسم الصورة عرضه 1670.</p>
+              <p>لا توجد لقطة محفوظة لهذا المكوّن. </p>
+            </article>
+<article class="extra-card" data-name="آراء عملاء مخصصة">
+              <h3>آراء عملاء مخصصة</h3>
+              <p>تقييمات باسم ونص ونجوم وصورة عميل. المقاس المكتوب في الإعداد لصورة العميل 68×68 بكسل.</p>
+              <p>لا توجد لقطة محفوظة لهذا المكوّن. </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="guide" id="pages">
+          <div class="section-head">
+            <h2>صفحات المتجر</h2>
+            <p>الثيم لا يثبت رابط متجر واحد. الروابط تُبنى وقت التشغيل من store.url الذي ترسله سلة.</p>
+          </div>
+          <div class="page-grid">
+<article class="extra-card" data-name="الصفحة الرئيسية"><h3>الصفحة الرئيسية</h3><p>الصفحة الرئيسية تعرض المكوّنات بالترتيب الذي يرتبه التاجر من محرر الثيم. الهيدر والفوتر يأتيان من القالب حولها.</p></article>
+<article class="extra-card" data-name="صفحة المنتج"><h3>صفحة المنتج</h3><p>الصور تكبر حسب إعداد «تكبير الصور». طريقة العرض إما إظهار الصورة كاملة (Contain) أو تغطيتها مع حفظ النسبة (Cover). زر الإضافة يمكن تثبيته أسفل الجوال.</p></article>
+<article class="extra-card" data-name="السلة"><h3>السلة</h3><p>رابطها store.url/cart. يمكن رفع «صورة البانر» من إعدادات الثيم، بدون مقاس مكتوب في الملف.</p></article>
+<article class="extra-card" data-name="الحساب"><h3>الحساب</h3><p>الملف الشخصي والطلبات والمفضلة والمحفظة والتنبيهات صفحات جاهزة في الثيم، وروابطها تحت store.url.</p></article>
+<article class="extra-card" data-name="الماركات والمقالات"><h3>الماركات والمقالات</h3><p>بانر صفحة الماركة في القالب 1200×300 مع قص cover وارتفاع أقصى 300. هذا تلميح عرض، وليس شرط رفع.</p></article>
+<article class="extra-card" data-name="الولاء وصفحة الشكر"><h3>الولاء وصفحة الشكر</h3><p>صفحتا loyalty و thank-you موجودتان في الثيم. لا يوجد لهما مقاس صورة خاص في الإعدادات.</p></article>
+          </div>
+          <div class="note" id="store-link">
+            <strong>رابط المتجر</strong>
+            <p>الهيدر والفوتر وزر السلة والحساب تستخدم store.url. لا يوجد دومين متجر مكتوب داخل ملفات الثيم، لذلك زر «رابط المتجر» في هذا الدليل ينقلك لهذا التوضيح بدل فتح عنوان غير موجود.</p>
+          </div>
+          <div class="note" id="whatsapp-note">
+            <strong>واتساب المتجر</strong>
+            <p>الأيقونة العائمة تظهر فقط إذا فُعّل «إظهار أيقونة الواتساب». الرابط في القالب هو https://wa.me/+رقم الإعداد مع نص الرسالة. القيمة الحالية في ملف الثيم للرقم هي 0، أي أنه غير مضبوط. اكتب الرقم بالمفتاح الدولي بدون + وبدون مسافات. موضع الأيقونة يمين الصفحة إذا فُعّل «عرض أيقونة الواتساب على اليمين».</p>
+          </div>
+        </section>
+
+        <section class="guide" id="sizes">
+          <div class="section-head">
+            <h2>مقاسات الصور</h2>
+            <p>العمود الأول هو النص المكتوب للتاجر داخل إعداد المكوّن. العمود الثاني هو أبعاد وسم الصورة أو قاعدة CSS. إذا اختلف العمودان، المتجر لا يفرض القص على مقاس الرفع.</p>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>العنصر</th>
+                  <th>الاستخدام</th>
+                  <th>في إعداد الثيم</th>
+                  <th>في القالب</th>
+                  <th>نوع المعلومة</th>
+                </tr>
+              </thead>
+              <tbody id="size-rows">
+<tr data-name="سلايدر صور"><td>سلايدر صور</td><td>صورة الشريحة على الديسكتوب والجوال</td><td>1669×668 و 768×566</td><td>العرض 1670 بلا طول</td><td>مكتوب في وصف إعداد المكوّن</td></tr>
+<tr data-name="بنرات"><td>بنرات</td><td>بانر الديسكتوب وبانر الجوال</td><td>2881×961 و 768×983</td><td>1800×450</td><td>المقاس من وصف الإعداد. وسم القالب لا يقص الصورة</td></tr>
+<tr data-name="اسلايدر ونصوص"><td>اسلايدر ونصوص</td><td>صورة الشريحة</td><td>634×372</td><td>500×372</td><td>المقاس من وصف الإعداد</td></tr>
+<tr data-name="فيديو"><td>فيديو</td><td>ملف الفيديو</td><td>1669×771</td><td>العرض 100%</td><td>المقاس من وصف الإعداد، وليس قصًا إجباريًا</td></tr>
+<tr data-name="منتجات متحركة مع خلفية"><td>منتجات متحركة مع خلفية</td><td>صورة الخلفية</td><td>1233×500</td><td>غير محددة في القالب</td><td>المقاس من وصف الإعداد</td></tr>
+<tr data-name="من نحن"><td>من نحن</td><td>صورة القسم</td><td>600×462</td><td>500×500</td><td>المقاس من وصف الإعداد</td></tr>
+<tr data-name="بنر ومنتجات"><td>بنر ومنتجات</td><td>صورة البانر الجانبي</td><td>727×1000</td><td>350×450</td><td>المقاس من وصف الإعداد</td></tr>
+<tr data-name="مجموعة صور"><td>مجموعة صور</td><td>صورة المعرض</td><td>400×533</td><td>250×350</td><td>المقاس من وصف الإعداد</td></tr>
+<tr data-name="عناصر بنرات ونصوص"><td>عناصر بنرات ونصوص</td><td>صورة البطاقة</td><td>1132×792</td><td>300×300</td><td>المقاس من وصف الإعداد. العرض يصغّر الصورة</td></tr>
+<tr data-name="روابط سريعة شكل 2 وشكل 3"><td>روابط سريعة شكل 2 وشكل 3</td><td>صورة الرابط</td><td>600×496</td><td>500×500 للشكل 2، و600×600 للشكل 3</td><td>المقاس من وصف الإعداد</td></tr>
+<tr data-name="روابط ومميزات"><td>روابط ومميزات</td><td>الصورة الرئيسية والأيقونة</td><td>446×500 و 80×80</td><td>300×500 و 80×80</td><td>المقاس من وصف الإعداد</td></tr>
+<tr data-name="تصنيفات ثابتة"><td>تصنيفات ثابتة</td><td>صورة التصنيف</td><td>200×200</td><td>96×96</td><td>المقاس من وصف الإعداد</td></tr>
+<tr data-name="ماركات شكل 2"><td>ماركات شكل 2</td><td>شعار</td><td>100×100</td><td>80×80</td><td>المقاس من وصف الإعداد</td></tr>
+<tr data-name="خصائص المتجر"><td>خصائص المتجر</td><td>أيقونة الميزة</td><td>يُفضَّل 120×120</td><td>60×60</td><td>توصية مكتوبة في الإعداد، والقالب يعرضها أصغر</td></tr>
+<tr data-name="آراء عملاء مخصصة"><td>آراء عملاء مخصصة</td><td>صورة العميل</td><td>68×68</td><td>68×68</td><td>المقاس من وصف الإعداد</td></tr>
+<tr data-name="شريط التنبيهات"><td>شريط التنبيهات</td><td>أيقونة الرسالة</td><td>غير مكتوب</td><td>26×26</td><td>تلميح عرض في القالب فقط</td></tr>
+<tr data-name="روابط سريعة"><td>روابط سريعة</td><td>صورة الاختصار</td><td>غير مكتوب</td><td>106×155</td><td>تلميح عرض في القالب فقط</td></tr>
+<tr data-name="صور مربعة"><td>صور مربعة</td><td>صورة المربع</td><td>غير مكتوب</td><td>200×200</td><td>تلميح عرض في القالب فقط</td></tr>
+<tr data-name="خصومات شكل 2"><td>خصومات شكل 2</td><td>صورة العرض</td><td>غير مكتوب</td><td>550×350</td><td>تلميح عرض. القص يتبع إعداد الاحتواء أو الغلاف</td></tr>
+<tr data-name="مقارنة"><td>مقارنة</td><td>صورتان</td><td>غير مكتوب</td><td>500×500</td><td>تلميح عرض في القالب فقط</td></tr>
+<tr data-name="الماركات التجارية"><td>الماركات التجارية</td><td>شعار الماركة</td><td>غير مكتوب</td><td>125×125</td><td>الشعار يأتي من بيانات الماركة</td></tr>
+<tr data-name="المدونة"><td>المدونة</td><td>صورة المقال</td><td>غير مكتوب</td><td>350×350</td><td>سلايدر صفحة المدونة ارتفاعه 300، و400 من 768px</td></tr>
+<tr data-name="بطاقة منتج سلة"><td>بطاقة منتج سلة</td><td>صورة المنتج داخل البطاقة القياسية</td><td>لا يوجد مقاس بكسل</td><td>النسبة 1 / 1.{قيمة الإعداد}</td><td>القيمة الافتراضية 1 فتصبح النسبة 1 / 1.1. المدى من 0 إلى 5</td></tr>
+<tr data-name="قائمة منتجات أفقية"><td>قائمة منتجات أفقية</td><td>صورة المنتج عندما تكون بجانب النص</td><td>لا يوجد مقاس بكسل</td><td>1/1 ثم 1/0.8 تحت 768px ثم 1/1 تحت 450px</td><td>نِسب عرض من CSS، وليست شرط رفع</td></tr>
+<tr data-name="بانر صفحة الماركة"><td>بانر صفحة الماركة</td><td>غلاف صفحة ماركة واحدة</td><td>غير مكتوب</td><td>1200×300 وارتفاع أقصى 300 مع cover</td><td>تلميح عرض في القالب</td></tr>
+<tr data-name="خريطة التواصل والفروع"><td>خريطة التواصل والفروع</td><td>إطار الخريطة</td><td>غير مكتوب</td><td>العرض 100% والارتفاع 450</td><td>مقاس الإطار وليس مقاس صورة</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="empty" id="empty-sizes">لا توجد نتيجة مطابقة في جدول المقاسات.</p>
+        </section>
+      </div>
+    </div>
+  </main>
   <footer class="site-footer" id="contact">
     <div class="wrap footer-panel">
       <h2>تواصل معنا</h2>
-      <p class="footer-lead">اختار طريقة التواصل المناسبة  واتساب أو اتصال أو بريد وتقدر تفتح المتجر مباشرة من زر الزيارة.</p>
+      <p class="footer-lead">أزرار الدليل تستخدم ما هو موجود فعلًا في ملفات الثيم. فيسبوك غير موجود كرابط ثابت، وروابط السوشيال في واجهة المتجر تأتي من مكوّن salla-social في الفوتر حسب لوحة سلة.</p>
       <div class="actions">
-        <a class="btn btn-wa" id="link-whatsapp" href="https://wa.me/" target="_blank" rel="noopener noreferrer">
-          <span class="btn-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 3.2a8.7 8.7 0 0 0-7.5 13l-.8 2.9 3-.8a8.7 8.7 0 0 0 13.2-7.5 8.7 8.7 0 0 0-7.9-7.6zm5 12c-.2.6-1.2 1.1-1.6 1.2-.4.1-.9.1-1.5-.1-.3-.1-.8-.3-1.4-.5-2.4-1-4-3.5-4.1-3.6-.1-.2-1-1.3-1-2.5s.6-1.7.8-2c.2-.2.5-.3.8-.3h.3c.2 0 .4 0 .5.4.2.6.7 1.8.8 1.9.1.1.1.3 0 .4-.1.2-.2.3-.3.4l-.3.4c-.1.1-.2.2-.1.5.1.2.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1.1-.1.6-.7.7-.9.1-.2.3-.2.5-.1.2.1 1.3.6 1.5.7.2.1.4.2.4.3.1.2.1.6-.1 1.2z"/></svg>
-          </span>
-          واتس أب
+        <a class="btn btn-wa" href="#whatsapp-note">
+          <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 3.2a8.7 8.7 0 0 0-7.5 13l-.8 2.9 3-.8a8.7 8.7 0 0 0 13.2-7.5 8.7 8.7 0 0 0-7.9-7.6zm5 12c-.2.6-1.2 1.1-1.6 1.2-.4.1-.9.1-1.5-.1-.3-.1-.8-.3-1.4-.5-2.4-1-4-3.5-4.1-3.6-.1-.2-1-1.3-1-2.5s.6-1.7.8-2c.2-.2.5-.3.8-.3h.3c.2 0 .4 0 .5.4.2.6.7 1.8.8 1.9.1.1.1.3 0 .4-.1.2-.2.3-.3.4l-.3.4c-.1.1-.2.2-.1.5.1.2.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1.1-.1.6-.7.7-.9.1-.2.3-.2.5-.1.2.1 1.3.6 1.5.7.2.1.4.2.4.3.1.2.1.6-.1 1.2z"/></svg></span>
+          إعداد واتساب
         </a>
-        <a class="btn btn-phone" id="link-phone" href="#">
-          <span class="btn-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.8" width="10" height="18.4" rx="2"/><path d="M11 18.2h2"/></svg>
-          </span>
-          الجوال
+        <a class="btn btn-mail" href="mailto:techpioneers90@gmail.com">
+          <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4.5 7.5 7.5 6 7.5-6"/></svg></span>
+          بريد مطور الثيم
         </a>
-        <a class="btn btn-mail" id="link-mail" href="#">
-          <span class="btn-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4.5 7.5 7.5 6 7.5-6"/></svg>
-          </span>
-          البريد الإلكتروني
-        </a>
-        <a class="btn btn-store" id="link-store" href="#">
-          <span class="btn-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 8h11l-.8 11.2a1.5 1.5 0 0 1-1.5 1.3H8.8a1.5 1.5 0 0 1-1.5-1.3L6.5 8z"/><path d="M9 8V6.8a3 3 0 0 1 6 0V8"/></svg>
-          </span>
-          زيارة المتجر
-        </a>
-      </div>
-      <div class="socials">
-        <a class="social" id="link-facebook" href="#" aria-label="فيسبوك">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14.2 8.5V6.7c0-.8.2-1.2 1.3-1.2H17V3h-2.2C12.1 3 11 4.3 11 6.5v2H8.8v2.8H11V21h3.2v-9.7h2.6l.4-2.8h-3z"/></svg>
-        </a>
-        <a class="social" id="link-instagram" href="#" aria-label="إنستغرام">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm4.5 5a5 5 0 1 0 .01 10.01A5 5 0 0 0 12 7zm0 2.2a2.8 2.8 0 1 1 0 5.6 2.8 2.8 0 0 1 0-5.6zM17.35 6.2a1.15 1.15 0 1 0 0 2.3 1.15 1.15 0 0 0 0-2.3z"/></svg>
-        </a>
-        <a class="social" id="link-tiktok" href="#" aria-label="تيك توك">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14.2 3.2c.5 2.7 2 4.6 4.6 5.1v2.7c-1.6 0-3-.5-4.2-1.4v6.8c0 3.5-2.8 6.4-6.4 6.4S1.8 20 1.8 16.4c0-3.4 2.6-6.2 6-6.4v2.8c-1.7.2-3 1.6-3 3.4 0 1.9 1.5 3.4 3.4 3.4s3.4-1.5 3.4-3.5V3.2h2.6z"/></svg>
-        </a>
-        <a class="social" id="link-snapchat" href="#" aria-label="سناب شات">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.6c2.5 0 4.2 1.9 4.2 4.8 0 .6.1 1 .3 1.3.4.2.8.3 1.1.5.6.3.7.8.3 1.2-.5.5-1.3.7-2 .6 0 .4-.1.7-.1 1 0 .3.5.5 1.2.8.9.3 1.7.8 1.8 1.5.2.8-.4 1.3-1.3 1.6-.4.1-.6.5-.5.9.2.6.9 1 1.7 1.2.5.2.6.7.3 1.1-.4.6-1.6.7-2.7.4-.6-.2-1.1.2-1.3.8-.4 1-1.6 2.1-3.8 2.1s-3.4-1.1-3.8-2.1c-.2-.6-.7-1-1.3-.8-1.1.3-2.3.2-2.7-.4-.3-.4-.2-.9.3-1.1.8-.2 1.5-.6 1.7-1.2.1-.4-.1-.8-.5-.9-1-.3-1.5-.8-1.3-1.6.1-.7.9-1.2 1.8-1.5.7-.3 1.2-.5 1.2-.8 0-.3-.1-.6-.1-1-.7.1-1.5-.1-2-.6-.4-.4-.3-.9.3-1.2.3-.2.7-.3 1.1-.5.2-.3.3-.7.3-1.3 0-2.9 1.7-4.8 4.2-4.8z"/></svg>
-        </a>
-        <a class="social" id="link-x" href="#" aria-label="إكس">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14.3 10.5 21.2 3h-1.7l-6 6.6L8.7 3H3.2l7.2 10.2L3.2 21h1.7l6.4-7 5 7h5.5l-7.5-10.5zm-2.3 2.5-.7-1L6.2 4.5h2.5l4.5 6.2.7 1 5.9 8h-2.5l-4.8-6.7z"/></svg>
+        <a class="btn btn-store" href="#store-link">
+          <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1v-9.5z"/></svg></span>
+          رابط المتجر
         </a>
       </div>
     </div>
   </footer>
-
   <a class="to-top" href="#top" aria-label="العودة للأعلى">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 6.5 5.5 13l1.4 1.4L12 9.3l5.1 5.1L18.5 13 12 6.5z"/></svg>
   </a>
-
   <div class="lightbox" id="lightbox" hidden>
     <button class="lightbox__close" id="lightbox-close" type="button" aria-label="إغلاق الصورة">×</button>
     <img id="lightbox-img" alt="">
   </div>
-
   <script>
     (function () {
       var header = document.querySelector(".site-header");
@@ -498,6 +653,11 @@
       var box = document.getElementById("lightbox");
       var boxImg = document.getElementById("lightbox-img");
       var closeBtn = document.getElementById("lightbox-close");
+      var search = document.getElementById("guide-search");
+      var cards = Array.prototype.slice.call(document.querySelectorAll(".card, .extra-card"));
+      var rows = Array.prototype.slice.call(document.querySelectorAll("#size-rows tr"));
+      var emptyCards = document.getElementById("empty-cards");
+      var emptySizes = document.getElementById("empty-sizes");
       var last = null;
 
       function onScroll() {
@@ -515,21 +675,18 @@
         document.body.classList.add("is-locked");
         closeBtn.focus();
       }
-
       function closeBox() {
         box.hidden = true;
         boxImg.removeAttribute("src");
         document.body.classList.remove("is-locked");
         if (last) last.focus();
       }
-
       document.querySelectorAll(".shot").forEach(function (btn) {
         btn.addEventListener("click", function () {
           var img = btn.querySelector("img");
           openBox(img.currentSrc || img.src, img.alt, btn);
         });
       });
-
       closeBtn.addEventListener("click", closeBox);
       box.addEventListener("click", function (event) {
         if (event.target === box) closeBox();
@@ -537,6 +694,25 @@
       document.addEventListener("keydown", function (event) {
         if (event.key === "Escape" && !box.hidden) closeBox();
       });
+
+      function applyFilter() {
+        var q = (search.value || "").trim().toLowerCase();
+        var shownCards = 0;
+        var shownRows = 0;
+        cards.forEach(function (el) {
+          var ok = !q || (el.getAttribute("data-name") || "").toLowerCase().indexOf(q) !== -1 || el.textContent.toLowerCase().indexOf(q) !== -1;
+          el.classList.toggle("is-hidden", !ok);
+          if (ok && el.classList.contains("card")) shownCards += 1;
+        });
+        rows.forEach(function (el) {
+          var ok = !q || el.textContent.toLowerCase().indexOf(q) !== -1;
+          el.classList.toggle("is-hidden", !ok);
+          if (ok) shownRows += 1;
+        });
+        emptyCards.classList.toggle("is-visible", q && shownCards === 0);
+        emptySizes.classList.toggle("is-visible", q && shownRows === 0);
+      }
+      search.addEventListener("input", applyFilter);
     })();
   </script>
 </body>
