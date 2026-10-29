@@ -1,719 +1,978 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="دليل استخدام ثيم شوفاي على سلة: السكاشن، صفحات المتجر، ومقاسات الصور كما هي في الثيم.">
-  <meta name="theme-color" content="#f4f1eb">
-  <title>دليل ثيم شوفاي | Salla</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>دليل ثيم شوفاي | مرجع السكاشن والمقاسات</title>
+  <meta name="description" content="دليل ثيم شوفاي على سلة: السكاشن، المقاسات، وإعدادات الهيدر والفوتر، بصور المتجر.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body id="top">
-  <a class="skip" href="#sections">تخطي إلى السكاشن</a>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="#top" aria-label="العودة لبداية الدليل">
-        <img src="https://salahhusham.github.io/shofy-salla-docs/Shofiy_Logo.png" width="512" height="132" alt="شعار شوفاي">
-      </a>
-      <label class="finder">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="m16 15.2 4 4-1.4 1.4-4-4z"/></svg>
-        <input id="guide-search" type="search" placeholder="ابحث عن سكشن أو صفحة" aria-label="بحث في الدليل">
-      </label>
-      <nav class="header-nav" aria-label="تنقل الدليل">
-        <a href="#sections">السكاشن</a>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top"><img src="https://salahhusham.github.io/shofy-salla-docs/Shofiy_Logo.png" alt="شوفاي"></a>
+      <nav class="nav-links">
+        <a href="#preview">المعاينة</a>
         <a href="#sizes">المقاسات</a>
-        <a class="header-cta" href="#contact">تواصل معنا</a>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section class="hero">
-      <div class="wrap">
-        <p class="eyebrow">دليل الثيم حسب الكود الفعلي</p>
-        <h1>دليل متجر <span class="gradient-text">شوفاي</span></h1>
-        <p class="lede">الأسماء والمقاسات هنا مأخوذة من إعدادات مكوّنات الثيم وقالب الصفحة الرئيسية. اللقطات من 1 إلى 31 لسكاشن الواجهة. أي مقاس غير مكتوب في الإعداد مذكور كتلميح عرض فقط، وليس شرط رفع.</p>
-      </div>
-    </section>
-    <div class="wrap layout">
-      <nav class="toc" aria-label="أقسام الدليل">
-        <a href="#sections">سكاشن الرئيسية</a>
-        <a href="#more">سكاشن بلا لقطة</a>
-        <a href="#pages">صفحات المتجر</a>
-        <a href="#sizes">مقاسات الصور</a>
+        <a href="#globals">إعدادات عامة</a>
+        <a href="#sections">السكاشن</a>
         <a href="#contact">التواصل</a>
       </nav>
+      <a class="nav-cta" href="#sections">السكاشن</a>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">مرجع العملاء · ثيم سلة · Shofy</div>
+          <h1>دليل ثيم <em>شوفاي</em><br>سكاشن، مقاسات، وإعدادات</h1>
+          <p class="hero-lead">مبني من مكوّنات الثيم ولقطات الدليل. كل سكشن له صورته ومقاسه: إما المكتوب في الإعداد، أو مقاس وسم الصورة في القالب إذا لم يُذكر مقاس رفع.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#sections">تصفح السكاشن</a>
+            <a class="btn btn-ghost" href="#sizes">جدول المقاسات</a>
+            <a class="btn btn-gold" href="#contact">التواصل</a>
+          </div>
+          <div class="price-chip">
+            <strong>34 سكشن</strong>
+            <span class="note">موثّق من ملفات الثيم</span>
+            <span class="help">إذا احتجت مساعدة في إعداد الصور، راسل بريد مطور الثيم.</span>
+          </div>
+          <div class="contact-row">
+            <a class="contact-pill" href="mailto:techpioneers90@gmail.com">✉ techpioneers90@gmail.com</a>
+            <a class="contact-pill" href="#whatsapp">واتساب من إعداد الثيم</a>
+          </div>
+        </div>
+        <figure class="hero-visual">
+          <img src="https://salahhusham.github.io/shofy-salla-docs/imges/2.jpeg" alt="سلايدر صور ثيم شوفاي">
+        </figure>
+      </div>
+    </section>
+
+    <section class="block" id="preview">
+      <div class="wrap">
+        <h2>لقطات من الدليل</h2>
+        <p class="sub">صور السكاشن الخاصة بشوفاي، بنفس ترتيب بطاقات الدليل.</p>
+        <div class="preview-grid">
+          <figure class="shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/2.jpeg" alt="سلايدر صور"><figcaption>سلايدر الصور</figcaption></figure>
+          <figure class="shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/6.jpeg" alt="بنرات"><figcaption>بنرات العروض</figcaption></figure>
+          <figure class="shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/9.jpeg" alt="مقارنة"><figcaption>مقارنة قبل وبعد</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="colors">
+      <div class="wrap">
+        <h2>ألوان الهوية</h2>
+        <p class="sub">ألوان شعار شوفاي المستخدمة في هذا الدليل. لون المتجر نفسه يتغير من إعداد لون الثيم في لوحة سلة.</p>
+        <div class="swatches">
+          <div class="swatch"><i style="background:#ff3b86"></i><div>وردي الشعار<br><code>#ff3b86</code></div></div>
+          <div class="swatch"><i style="background:#ffb11a"></i><div>برتقالي الشعار<br><code>#ffb11a</code></div></div>
+          <div class="swatch"><i style="background:#21d4ee"></i><div>سماوي الشعار<br><code>#21d4ee</code></div></div>
+          <div class="swatch"><i style="background:#17171b"></i><div>النص الغامق<br><code>#17171b</code></div></div>
+          <div class="swatch"><i style="background:#ffffff"></i><div>خلفية الصفحة الافتراضية<br><code>#ffffff</code></div></div>
+        </div>
+        <div class="stats">
+          <div class="stat"><strong>34</strong><span>سكشن في هذا الدليل</span></div>
+          <div class="stat"><strong>3</strong><span>هيدر · تخطيط · فوتر</span></div>
+          <div class="stat"><strong>RTL</strong><span>عربي بالكامل</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="sizes">
+      <div class="wrap">
+        <h2>جدول المقاسات السريع</h2>
+        <p class="sub">إذا كُتب المقاس في إعداد المكوّن فهو المعتمد. إذا لم يُكتب، الرقم هو width × height من وسم الصورة في القالب، وليس شرط قص إجباري.</p>
+        <div class="table-wrap">
+          <table class="sizes-table">
+            <thead><tr><th>السكشن</th><th>المقاس</th><th>المصدر</th></tr></thead>
+            <tbody><tr data-name="شريط إعلانات"><td>شريط إعلانات</td><td><code>26 × 26</code></td><td>لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</td></tr><tr data-name="سلايدر صور"><td>سلايدر صور</td><td><code>1669 × 668 · 768 × 566</code></td><td>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</td></tr><tr data-name="روابط سريعة"><td>روابط سريعة</td><td><code>106 × 155</code></td><td>لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</td></tr><tr data-name="خصومات شكل 2"><td>خصومات شكل 2</td><td><code>550 × 350</code></td><td>لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</td></tr><tr data-name="منتجات متحركة"><td>منتجات متحركة</td><td><code>نسبة البطاقة</code></td><td>صور المنتجات تتبع إعداد «طول صورة المنتج»: القيمة الافتراضية 1 وتعطي نسبة عرض 1 / 1.1، والمدى من 0 إلى 5. لا يوجد مقاس رفع بالبكسل.</td></tr><tr data-name="بنرات"><td>بنرات</td><td><code>2881 × 961 · 768 × 983</code></td><td>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</td></tr><tr data-name="منتجات مميزة"><td>منتجات مميزة</td><td><code>نسبة البطاقة</code></td><td>صور المنتجات تتبع إعداد «طول صورة المنتج»: القيمة الافتراضية 1 وتعطي نسبة عرض 1 / 1.1، والمدى من 0 إلى 5. لا يوجد مقاس رفع بالبكسل.</td></tr><tr data-name="صور مربعة"><td>صور مربعة</td><td><code>200 × 200</code></td><td>لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</td></tr><tr data-name="مقارنة"><td>مقارنة</td><td><code>500 × 500</code></td><td>لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</td></tr><tr data-name="منتجات بتبويبات"><td>منتجات بتبويبات</td><td><code>نسبة البطاقة</code></td><td>صور المنتجات تتبع إعداد «طول صورة المنتج»: القيمة الافتراضية 1 وتعطي نسبة عرض 1 / 1.1، والمدى من 0 إلى 5. لا يوجد مقاس رفع بالبكسل.</td></tr><tr data-name="اسلايدر ونصوص"><td>اسلايدر ونصوص</td><td><code>634 × 372</code></td><td>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</td></tr><tr data-name="شريط التنبيهات"><td>شريط التنبيهات</td><td><code>26 × 26</code></td><td>لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</td></tr><tr data-name="تصنيفات ثابتة"><td>تصنيفات ثابتة</td><td><code>200 × 200</code></td><td>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</td></tr><tr data-name="تصنيفات ومميزات"><td>تصنيفات ومميزات</td><td><code>180 × 175 · 54 × 54</code></td><td>لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</td></tr><tr data-name="فيديو"><td>فيديو</td><td><code>1669 × 771</code></td><td>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</td></tr><tr data-name="ماركات شكل 2"><td>ماركات شكل 2</td><td><code>100 × 100</code></td><td>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</td></tr><tr data-name="روابط سريعة شكل 3"><td>روابط سريعة شكل 3</td><td><code>600 × 496</code></td><td>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</td></tr><tr data-name="من نحن"><td>من نحن</td><td><code>600 × 462</code></td><td>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</td></tr><tr data-name="بنر ومنتجات"><td>بنر ومنتجات</td><td><code>727 × 1000</code></td><td>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</td></tr><tr data-name="مجموعة صور"><td>مجموعة صور</td><td><code>400 × 533</code></td><td>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</td></tr><tr data-name="روابط سريعة شكل 2"><td>روابط سريعة شكل 2</td><td><code>600 × 496</code></td><td>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</td></tr><tr data-name="روابط ومميزات"><td>روابط ومميزات</td><td><code>446 × 500 · 80 × 80</code></td><td>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</td></tr><tr data-name="العروض والخصومات"><td>العروض والخصومات</td><td><code>بدون صورة ثابتة</code></td><td>هذا السكشن لا يفرض مقاس صورة.</td></tr><tr data-name="عناصر بنرات ونصوص"><td>عناصر بنرات ونصوص</td><td><code>1132 × 792</code></td><td>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</td></tr><tr data-name="الماركات التجارية"><td>الماركات التجارية</td><td><code>125 × 125</code></td><td>لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</td></tr><tr data-name="المدونة"><td>المدونة</td><td><code>350 × 350</code></td><td>لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</td></tr><tr data-name="منتجات متحركة مع خلفية"><td>منتجات متحركة مع خلفية</td><td><code>1233 × 500</code></td><td>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</td></tr><tr data-name="الاسئلة الشائعة"><td>الاسئلة الشائعة</td><td><code>بدون صورة ثابتة</code></td><td>هذا السكشن لا يفرض مقاس صورة.</td></tr><tr data-name="تواصل معنا"><td>تواصل معنا</td><td><code>بدون صورة ثابتة</code></td><td>هذا السكشن لا يفرض مقاس صورة.</td></tr><tr data-name="الفروع"><td>الفروع</td><td><code>بدون صورة ثابتة</code></td><td>هذا السكشن لا يفرض مقاس صورة.</td></tr><tr data-name="خصائص المتجر"><td>خصائص المتجر</td><td><code>120 × 120</code></td><td>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</td></tr><tr data-name="آراء عملاء مخصصة"><td>آراء عملاء مخصصة</td><td><code>68 × 68</code></td><td>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</td></tr><tr data-name="اسلايدر مميز"><td>اسلايدر مميز</td><td><code>عرض 1670</code></td><td>لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</td></tr><tr data-name="نقاط منتجات"><td>نقاط منتجات</td><td><code>1200 × 550 · 60 × 60</code></td><td>لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="globals">
+      <div class="wrap">
+        <h2>الإعدادات العامة</h2>
+        <p class="sub">هيدر · تخطيط · فوتر. تؤثر على صفحات المتجر كلها.</p>
+        <div class="global-cards">
+          <a class="sec-card" href="#global-header"><span class="sec-num">01</span><h3>الهيدر</h3><p>شعار، بحث، رأس ثابت، وقائمة الجوال.</p></a>
+          <a class="sec-card" href="#global-layout"><span class="sec-num">02</span><h3>التخطيط</h3><p>لون الصفحة، صورة المنتج، وزر واتساب.</p></a>
+          <a class="sec-card" href="#global-footer"><span class="sec-num">03</span><h3>الفوتر</h3><p>شعار المتجر، روابط، تواصل، وطرق الدفع.</p></a>
+        </div>
+        <article class="detail" id="global-header">
+          <header class="detail-head"><div><span class="cat-pill">إعدادات عامة</span><h2>الهيدر</h2><p class="lead">شعار المتجر يظهر في الهيدر بحد أقصى من ستايل القالب، وليس بمقاس رفع مكتوب.</p></div></header>
+          <div class="panel"><h4>المقاسات</h4>
+            <table><thead><tr><th>العنصر</th><th>المقاس في الستايل</th></tr></thead><tbody>
+              <tr><td>شعار الهيدر</td><td><code>أقصى ارتفاع 48px</code> · أقصى عرض <code>100px</code> ويصبح <code>170px</code> على الشاشات الأعرض قليلًا</td></tr>
+              <tr><td>ارتفاع شريط الهيدر</td><td><code>68px</code> ويصبح <code>84px</code> على الشاشات الكبيرة</td></tr>
+            </tbody></table>
+          </div>
+          <a class="back-top" href="#globals">↑ العودة للإعدادات العامة</a>
+        </article>
+        <article class="detail" id="global-layout">
+          <header class="detail-head"><div><span class="cat-pill">إعدادات عامة</span><h2>التخطيط</h2><p class="lead">لون الخلفية الافتراضي أبيض. طول صورة المنتج شريط من 0 إلى 5.</p></div></header>
+          <div class="panel" id="whatsapp"><h4>واتساب</h4>
+            <p class="lead">الزر يظهر فقط عند تفعيل «إظهار أيقونة الواتساب». الرابط <code>https://wa.me/+الرقم</code> والرقم يُكتب بالمفتاح الدولي بدون +. القيمة الحالية في ملف الثيم هي 0، أي غير مضبوطة. يمكن إظهار الأيقونة على اليمين من إعداد منفصل.</p>
+          </div>
+          <div class="panel"><h4>صورة المنتج</h4>
+            <table><thead><tr><th>العنصر</th><th>المقاس</th></tr></thead><tbody>
+              <tr><td>بطاقة المنتج القياسية</td><td>نسبة <code>1 / 1.1</code> عند القيمة الافتراضية 1. المدى 0 إلى 5 فيصبح الرقم <code>1.0</code> حتى <code>1.5</code></td></tr>
+              <tr><td>منتج بجانب نصه</td><td><code>1 / 1</code>، وتحت عرض 768px تصبح <code>1 / 0.8</code>، وتحت 450px ترجع <code>1 / 1</code></td></tr>
+            </tbody></table>
+          </div>
+          <a class="back-top" href="#globals">↑ العودة للإعدادات العامة</a>
+        </article>
+        <article class="detail" id="global-footer">
+          <header class="detail-head"><div><span class="cat-pill">إعدادات عامة</span><h2>الفوتر</h2><p class="lead">الشعار وروابط التواصل والسوشيال تأتي من لوحة سلة، وليست روابط ثابتة داخل الثيم.</p></div></header>
+          <div class="panel"><h4>المقاسات</h4>
+            <p class="empty">لوجو الفوتر يتمدد داخل صندوقه مع إبقاء الصورة كاملة (contain). لا يوجد مقاس رفع مكتوب له.</p>
+          </div>
+          <a class="back-top" href="#globals">↑ العودة للإعدادات العامة</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="block" id="sections">
+      <div class="wrap">
+        <h2>سكاشن الثيم</h2>
+        <p class="sub">اضغط أي سكشن للتفاصيل والمقاس وجدول الإعدادات.</p>
+        <input class="search" id="search" type="search" placeholder="ابحث باسم السكشن…">
+        <div class="filters" id="filters">
+          <button type="button" class="filter active" data-filter="all">الكل</button>
+          <button type="button" class="filter" data-filter="hero">الواجهة الرئيسية</button>
+          <button type="button" class="filter" data-filter="promo">العروض والترويج</button>
+          <button type="button" class="filter" data-filter="catalog">التصنيفات والمجموعات</button>
+          <button type="button" class="filter" data-filter="products">المنتجات</button>
+          <button type="button" class="filter" data-filter="media">الوسائط والمعارض</button>
+          <button type="button" class="filter" data-filter="social">آراء العملاء</button>
+          <button type="button" class="filter" data-filter="content">المحتوى والثقة</button>
+          <button type="button" class="filter" data-filter="other">أخرى</button>
+        </div>
+        <div class="sec-grid" id="cards">
+          <a class="sec-card" href="#sec-1" data-cat="promo">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/1.jpeg" alt="شريط إعلانات" loading="lazy"></div>
+    <span class="sec-num">01</span>
+    <h3>شريط إعلانات</h3>
+    <p>لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</p>
+    <div class="sec-meta"><span>26 × 26</span><span>العروض والترويج</span></div>
+  </a>
+<a class="sec-card" href="#sec-2" data-cat="hero">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/2.jpeg" alt="سلايدر صور" loading="lazy"></div>
+    <span class="sec-num">02</span>
+    <h3>سلايدر صور</h3>
+    <p>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم. العرض في القالب قد يختلف.</p>
+    <div class="sec-meta"><span>1669 × 668 · 768 × 566</span><span>الواجهة الرئيسية</span></div>
+  </a>
+<a class="sec-card" href="#sec-3" data-cat="catalog">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/3.jpeg" alt="روابط سريعة" loading="lazy"></div>
+    <span class="sec-num">03</span>
+    <h3>روابط سريعة</h3>
+    <p>لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</p>
+    <div class="sec-meta"><span>106 × 155</span><span>التصنيفات والمجموعات</span></div>
+  </a>
+<a class="sec-card" href="#sec-4" data-cat="promo">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/4.jpeg" alt="خصومات شكل 2" loading="lazy"></div>
+    <span class="sec-num">04</span>
+    <h3>خصومات شكل 2</h3>
+    <p>لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</p>
+    <div class="sec-meta"><span>550 × 350</span><span>العروض والترويج</span></div>
+  </a>
+<a class="sec-card" href="#sec-5" data-cat="products">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/5.jpeg" alt="منتجات متحركة" loading="lazy"></div>
+    <span class="sec-num">05</span>
+    <h3>منتجات متحركة</h3>
+    <p>صور المنتجات تتبع إعداد «طول صورة المنتج»: القيمة الافتراضية 1 وتعطي نسبة عرض 1 / 1.1، والمدى من 0 إلى 5. لا يوجد مقاس رفع بالبكسل.</p>
+    <div class="sec-meta"><span>نسبة البطاقة</span><span>المنتجات</span></div>
+  </a>
+<a class="sec-card" href="#sec-6" data-cat="promo">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/6.jpeg" alt="بنرات" loading="lazy"></div>
+    <span class="sec-num">06</span>
+    <h3>بنرات</h3>
+    <p>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم. العرض في القالب قد يختلف.</p>
+    <div class="sec-meta"><span>2881 × 961 · 768 × 983</span><span>العروض والترويج</span></div>
+  </a>
+<a class="sec-card" href="#sec-7" data-cat="products">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/7.jpeg" alt="منتجات مميزة" loading="lazy"></div>
+    <span class="sec-num">07</span>
+    <h3>منتجات مميزة</h3>
+    <p>صور المنتجات تتبع إعداد «طول صورة المنتج»: القيمة الافتراضية 1 وتعطي نسبة عرض 1 / 1.1، والمدى من 0 إلى 5. لا يوجد مقاس رفع بالبكسل.</p>
+    <div class="sec-meta"><span>نسبة البطاقة</span><span>المنتجات</span></div>
+  </a>
+<a class="sec-card" href="#sec-8" data-cat="catalog">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/8.jpeg" alt="صور مربعة" loading="lazy"></div>
+    <span class="sec-num">08</span>
+    <h3>صور مربعة</h3>
+    <p>لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</p>
+    <div class="sec-meta"><span>200 × 200</span><span>التصنيفات والمجموعات</span></div>
+  </a>
+<a class="sec-card" href="#sec-9" data-cat="media">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/9.jpeg" alt="مقارنة" loading="lazy"></div>
+    <span class="sec-num">09</span>
+    <h3>مقارنة</h3>
+    <p>لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</p>
+    <div class="sec-meta"><span>500 × 500</span><span>الوسائط والمعارض</span></div>
+  </a>
+<a class="sec-card" href="#sec-10" data-cat="products">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/10.jpeg" alt="منتجات بتبويبات" loading="lazy"></div>
+    <span class="sec-num">10</span>
+    <h3>منتجات بتبويبات</h3>
+    <p>صور المنتجات تتبع إعداد «طول صورة المنتج»: القيمة الافتراضية 1 وتعطي نسبة عرض 1 / 1.1، والمدى من 0 إلى 5. لا يوجد مقاس رفع بالبكسل.</p>
+    <div class="sec-meta"><span>نسبة البطاقة</span><span>المنتجات</span></div>
+  </a>
+<a class="sec-card" href="#sec-11" data-cat="hero">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/11.jpeg" alt="اسلايدر ونصوص" loading="lazy"></div>
+    <span class="sec-num">11</span>
+    <h3>اسلايدر ونصوص</h3>
+    <p>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم. العرض في القالب قد يختلف.</p>
+    <div class="sec-meta"><span>634 × 372</span><span>الواجهة الرئيسية</span></div>
+  </a>
+<a class="sec-card" href="#sec-12" data-cat="promo">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/12.jpeg" alt="شريط التنبيهات" loading="lazy"></div>
+    <span class="sec-num">12</span>
+    <h3>شريط التنبيهات</h3>
+    <p>لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</p>
+    <div class="sec-meta"><span>26 × 26</span><span>العروض والترويج</span></div>
+  </a>
+<a class="sec-card" href="#sec-13" data-cat="catalog">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/13.jpeg" alt="تصنيفات ثابتة" loading="lazy"></div>
+    <span class="sec-num">13</span>
+    <h3>تصنيفات ثابتة</h3>
+    <p>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم. العرض في القالب قد يختلف.</p>
+    <div class="sec-meta"><span>200 × 200</span><span>التصنيفات والمجموعات</span></div>
+  </a>
+<a class="sec-card" href="#sec-14" data-cat="catalog">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/14.jpeg" alt="تصنيفات ومميزات" loading="lazy"></div>
+    <span class="sec-num">14</span>
+    <h3>تصنيفات ومميزات</h3>
+    <p>لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</p>
+    <div class="sec-meta"><span>180 × 175 · 54 × 54</span><span>التصنيفات والمجموعات</span></div>
+  </a>
+<a class="sec-card" href="#sec-15" data-cat="media">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/15.jpeg" alt="فيديو" loading="lazy"></div>
+    <span class="sec-num">15</span>
+    <h3>فيديو</h3>
+    <p>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم. العرض في القالب قد يختلف.</p>
+    <div class="sec-meta"><span>1669 × 771</span><span>الوسائط والمعارض</span></div>
+  </a>
+<a class="sec-card" href="#sec-16" data-cat="content">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/16.jpeg" alt="ماركات شكل 2" loading="lazy"></div>
+    <span class="sec-num">16</span>
+    <h3>ماركات شكل 2</h3>
+    <p>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم. العرض في القالب قد يختلف.</p>
+    <div class="sec-meta"><span>100 × 100</span><span>المحتوى والثقة</span></div>
+  </a>
+<a class="sec-card" href="#sec-17" data-cat="catalog">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/17.jpeg" alt="روابط سريعة شكل 3" loading="lazy"></div>
+    <span class="sec-num">17</span>
+    <h3>روابط سريعة شكل 3</h3>
+    <p>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم. العرض في القالب قد يختلف.</p>
+    <div class="sec-meta"><span>600 × 496</span><span>التصنيفات والمجموعات</span></div>
+  </a>
+<a class="sec-card" href="#sec-18" data-cat="content">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/18.jpeg" alt="من نحن" loading="lazy"></div>
+    <span class="sec-num">18</span>
+    <h3>من نحن</h3>
+    <p>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم. العرض في القالب قد يختلف.</p>
+    <div class="sec-meta"><span>600 × 462</span><span>المحتوى والثقة</span></div>
+  </a>
+<a class="sec-card" href="#sec-19" data-cat="promo">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/19.jpeg" alt="بنر ومنتجات" loading="lazy"></div>
+    <span class="sec-num">19</span>
+    <h3>بنر ومنتجات</h3>
+    <p>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم. العرض في القالب قد يختلف.</p>
+    <div class="sec-meta"><span>727 × 1000</span><span>العروض والترويج</span></div>
+  </a>
+<a class="sec-card" href="#sec-20" data-cat="media">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/20.jpeg" alt="مجموعة صور" loading="lazy"></div>
+    <span class="sec-num">20</span>
+    <h3>مجموعة صور</h3>
+    <p>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم. العرض في القالب قد يختلف.</p>
+    <div class="sec-meta"><span>400 × 533</span><span>الوسائط والمعارض</span></div>
+  </a>
+<a class="sec-card" href="#sec-21" data-cat="catalog">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/21.jpeg" alt="روابط سريعة شكل 2" loading="lazy"></div>
+    <span class="sec-num">21</span>
+    <h3>روابط سريعة شكل 2</h3>
+    <p>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم. العرض في القالب قد يختلف.</p>
+    <div class="sec-meta"><span>600 × 496</span><span>التصنيفات والمجموعات</span></div>
+  </a>
+<a class="sec-card" href="#sec-22" data-cat="content">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/22.jpeg" alt="روابط ومميزات" loading="lazy"></div>
+    <span class="sec-num">22</span>
+    <h3>روابط ومميزات</h3>
+    <p>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم. العرض في القالب قد يختلف.</p>
+    <div class="sec-meta"><span>446 × 500 · 80 × 80</span><span>المحتوى والثقة</span></div>
+  </a>
+<a class="sec-card" href="#sec-23" data-cat="promo">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/23.jpeg" alt="العروض والخصومات" loading="lazy"></div>
+    <span class="sec-num">23</span>
+    <h3>العروض والخصومات</h3>
+    <p>هذا السكشن لا يفرض مقاس صورة.</p>
+    <div class="sec-meta"><span>بدون صورة ثابتة</span><span>العروض والترويج</span></div>
+  </a>
+<a class="sec-card" href="#sec-24" data-cat="promo">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/24.jpeg" alt="عناصر بنرات ونصوص" loading="lazy"></div>
+    <span class="sec-num">24</span>
+    <h3>عناصر بنرات ونصوص</h3>
+    <p>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم. العرض في القالب قد يختلف.</p>
+    <div class="sec-meta"><span>1132 × 792</span><span>العروض والترويج</span></div>
+  </a>
+<a class="sec-card" href="#sec-25" data-cat="content">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/25.jpeg" alt="الماركات التجارية" loading="lazy"></div>
+    <span class="sec-num">25</span>
+    <h3>الماركات التجارية</h3>
+    <p>لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</p>
+    <div class="sec-meta"><span>125 × 125</span><span>المحتوى والثقة</span></div>
+  </a>
+<a class="sec-card" href="#sec-26" data-cat="content">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/26.jpeg" alt="المدونة" loading="lazy"></div>
+    <span class="sec-num">26</span>
+    <h3>المدونة</h3>
+    <p>لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</p>
+    <div class="sec-meta"><span>350 × 350</span><span>المحتوى والثقة</span></div>
+  </a>
+<a class="sec-card" href="#sec-27" data-cat="products">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/27.jpeg" alt="منتجات متحركة مع خلفية" loading="lazy"></div>
+    <span class="sec-num">27</span>
+    <h3>منتجات متحركة مع خلفية</h3>
+    <p>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم. العرض في القالب قد يختلف.</p>
+    <div class="sec-meta"><span>1233 × 500</span><span>المنتجات</span></div>
+  </a>
+<a class="sec-card" href="#sec-28" data-cat="content">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/28.jpeg" alt="الاسئلة الشائعة" loading="lazy"></div>
+    <span class="sec-num">28</span>
+    <h3>الاسئلة الشائعة</h3>
+    <p>هذا السكشن لا يفرض مقاس صورة.</p>
+    <div class="sec-meta"><span>بدون صورة ثابتة</span><span>المحتوى والثقة</span></div>
+  </a>
+<a class="sec-card" href="#sec-29" data-cat="content">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/29.jpeg" alt="تواصل معنا" loading="lazy"></div>
+    <span class="sec-num">29</span>
+    <h3>تواصل معنا</h3>
+    <p>هذا السكشن لا يفرض مقاس صورة.</p>
+    <div class="sec-meta"><span>بدون صورة ثابتة</span><span>المحتوى والثقة</span></div>
+  </a>
+<a class="sec-card" href="#sec-30" data-cat="content">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/30.jpeg" alt="الفروع" loading="lazy"></div>
+    <span class="sec-num">30</span>
+    <h3>الفروع</h3>
+    <p>هذا السكشن لا يفرض مقاس صورة.</p>
+    <div class="sec-meta"><span>بدون صورة ثابتة</span><span>المحتوى والثقة</span></div>
+  </a>
+<a class="sec-card" href="#sec-31" data-cat="content">
+    <div class="card-thumb"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/31.jpeg" alt="خصائص المتجر" loading="lazy"></div>
+    <span class="sec-num">31</span>
+    <h3>خصائص المتجر</h3>
+    <p>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم. العرض في القالب قد يختلف.</p>
+    <div class="sec-meta"><span>120 × 120</span><span>المحتوى والثقة</span></div>
+  </a>
+<a class="sec-card" href="#sec-32" data-cat="social">
+    <div class="card-thumb missing">لا توجد لقطة</div>
+    <span class="sec-num">32</span>
+    <h3>آراء عملاء مخصصة</h3>
+    <p>المقاس مكتوب في وصف إعداد المكوّن داخل الثيم. العرض في القالب قد يختلف.</p>
+    <div class="sec-meta"><span>68 × 68</span><span>آراء العملاء</span></div>
+  </a>
+<a class="sec-card" href="#sec-33" data-cat="hero">
+    <div class="card-thumb missing">لا توجد لقطة</div>
+    <span class="sec-num">33</span>
+    <h3>اسلايدر مميز</h3>
+    <p>لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</p>
+    <div class="sec-meta"><span>عرض 1670</span><span>الواجهة الرئيسية</span></div>
+  </a>
+<a class="sec-card" href="#sec-34" data-cat="products">
+    <div class="card-thumb missing">لا توجد لقطة</div>
+    <span class="sec-num">34</span>
+    <h3>نقاط منتجات</h3>
+    <p>لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</p>
+    <div class="sec-meta"><span>1200 × 550 · 60 × 60</span><span>المنتجات</span></div>
+  </a>
+        </div>
+        <div id="details">
+          <article class="detail" id="sec-1" data-cat="promo">
+    <header class="detail-head">
       <div>
-        <section class="guide" id="sections">
-          <div class="section-head">
-            <h2>سكاشن الصفحة الرئيسية</h2>
-            <p>كل بطاقة فيها لقطة، اسم المكوّن كما في الثيم، ماذا يفعل، وأين يجد الزائر التفاعل. الترتيب هو ترتيب صور الدليل، وليس ترتيبًا إجباريًا داخل المتجر. ترتيب الظهور يحدده التاجر من محرر الثيم.</p>
-          </div>
-          <div class="gallery" id="gallery">
-<article class="card" id="sec-1" data-name="شريط إعلانات">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/1.jpeg" alt="شريط إعلانات">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 1 · الصفحة الرئيسية</p>
-              <h2>شريط إعلانات</h2>
-              <p>اللقطة شريط نص يتحرك، وليست شبكة البنرات. في الثيم شريط إعدادات باسم «شريط الإعلانات»، ومكوّن رئيسي باسم «شريط التنبيهات». الأيقونة اختيارية.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>يظهر أعلى الصفحة ويكرر الرسالة. الزائر يقرأها أثناء التصفح، والضغط يفتح الرابط إن وُجد.</dd></div>
-                <div><dt>الصورة</dt><dd>لا يوجد مقاس رفع للنص. أيقونة شريط التنبيهات في القالب 26×26 بكسل، وهذا تلميح عرض وليس شرط رفع.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-2" data-name="سلايدر صور">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/2.jpeg" alt="سلايدر صور" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 2 · الصفحة الرئيسية</p>
-              <h2>سلايدر صور</h2>
-              <p>صورة عريضة مع أسهم للتنقل بين الشرائح.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط السهم أو ينتظر الحركة ثم يفتح رابط الشريحة.</dd></div>
-                <div><dt>الصورة</dt><dd>في وصف الإعداد: 1669×668 للشاشة الكبيرة، و768×566 للجوال. وسم الصورة في القالب عرضه 1670 بدون طول ثابت.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-3" data-name="روابط سريعة">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/3.jpeg" alt="روابط سريعة" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 3 · الصفحة الرئيسية</p>
-              <h2>روابط سريعة</h2>
-              <p>اختصارات مصورة لأقسام أو روابط.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط الدائرة أو الصورة للانتقال.</dd></div>
-                <div><dt>الصورة</dt><dd>لا يوجد مقاس مكتوب في الإعداد. وسم الصورة في القالب 106×155، وهو تلميح عرض فقط.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-4" data-name="خصومات شكل 2">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/4.jpeg" alt="خصومات شكل 2" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 4 · الصفحة الرئيسية</p>
-              <h2>خصومات شكل 2</h2>
-              <p>صورة مع عنوان وعداد تنازلي وزر، إن فُعّلت هذه الحقول.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يرى الوقت المتبقي ويضغط زر العرض.</dd></div>
-                <div><dt>الصورة</dt><dd>لا يوجد مقاس مكتوب في الإعداد. وسم الصورة 550×350. طريقة العرض من إعداد «عرض الصورة بالكامل» أو «كغلاف»، ولا يُقص المقاس تلقائيًا.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-5" data-name="منتجات متحركة">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/5.jpeg" alt="منتجات متحركة" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 5 · الصفحة الرئيسية</p>
-              <h2>منتجات متحركة</h2>
-              <p>سلايدر منتجات. الصور تأتي من صور المنتجات نفسها، وليس من مقاس بانر خاص.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يسحب السلايدر ويفتح المنتج أو يضيفه للسلة إن ظهر الزر.</dd></div>
-                <div><dt>الصورة</dt><dd>نسبة بطاقة المنتج من إعداد «طول صورة المنتج»، وليست مقاس رفع بالبكسل. التفاصيل في جدول المقاسات.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-6" data-name="بنرات">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/6.jpeg" alt="بنرات" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 6 · الصفحة الرئيسية</p>
-              <h2>بنرات</h2>
-              <p>مجموعة صور، كل صورة لها رابط، مع صورة منفصلة للجوال.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط البانر للانتقال. إن وُجدت صورة الجوال تظهر تحت 768 بكسل.</dd></div>
-                <div><dt>الصورة</dt><dd>في وصف الإعداد: 2881×961 للكبير، و768×983 للجوال. وسم الصورة في القالب 1800×450 ولا يفرض القص.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-7" data-name="منتجات مميزة">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/7.jpeg" alt="منتجات مميزة" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 7 · الصفحة الرئيسية</p>
-              <h2>منتجات مميزة</h2>
-              <p>بطاقات منتجات مختارة بصورة وسعر وزر إضافة.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يفتح المنتج أو يضيفه للسلة من البطاقة.</dd></div>
-                <div><dt>الصورة</dt><dd>تستخدم نسبة صورة المنتج في إعدادات الثيم. لا يوجد مقاس بانر مستقل لهذا المكوّن.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-8" data-name="صور مربعة">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/8.jpeg" alt="صور مربعة" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 8 · الصفحة الرئيسية</p>
-              <h2>صور مربعة</h2>
-              <p>شبكة صور بعناوين وروابط.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط المربع ليفتح القسم.</dd></div>
-                <div><dt>الصورة</dt><dd>لا يوجد مقاس مكتوب في الإعداد. وسم الصورة في القالب 200×200.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-9" data-name="مقارنة">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/9.jpeg" alt="مقارنة" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 9 · الصفحة الرئيسية</p>
-              <h2>مقارنة</h2>
-              <p>صورتان للمقارنة، مع عنوان وزر.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يحرّك فاصل المقارنة ثم يضغط زر التسوق.</dd></div>
-                <div><dt>الصورة</dt><dd>لا يوجد مقاس مكتوب في الإعداد. كل صورة في القالب عليها 500×500 كتلميح عرض.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-10" data-name="منتجات بتبويبات">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/10.jpeg" alt="منتجات بتبويبات" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 10 · الصفحة الرئيسية</p>
-              <h2>منتجات بتبويبات</h2>
-              <p>تبويبات تبدّل مجموعة المنتجات دون مغادرة الصفحة.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط اسم التبويب ثم يفتح منتجًا.</dd></div>
-                <div><dt>الصورة</dt><dd>صور المنتجات تتبع نسبة بطاقة المنتج، وليس مقاسًا ثابتًا لهذا المكوّن.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-11" data-name="اسلايدر ونصوص">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/11.jpeg" alt="اسلايدر ونصوص" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 11 · الصفحة الرئيسية</p>
-              <h2>اسلايدر ونصوص</h2>
-              <p>شريحة فيها صورة وعنوان ونص وزر.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يتنقل بين الشرائح ويضغط زر التسوق.</dd></div>
-                <div><dt>الصورة</dt><dd>في وصف الإعداد: 634×372. وسم الصورة في القالب 500×372.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-12" data-name="شريط التنبيهات">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/12.jpeg" alt="شريط التنبيهات" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 12 · الصفحة الرئيسية</p>
-              <h2>شريط التنبيهات</h2>
-              <p>نص متحرك، وأيقونة اختيارية، ولون خلفية ونص.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>أعلى محتوى الصفحة أو حسب ترتيب المكوّنات. الضغط يفتح الرابط إن أُدخل.</dd></div>
-                <div><dt>الصورة</dt><dd>لا يوجد مقاس مكتوب في الإعداد. الأيقونة في القالب 26×26.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-13" data-name="تصنيفات ثابتة">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/13.jpeg" alt="تصنيفات ثابتة" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 13 · الصفحة الرئيسية</p>
-              <h2>تصنيفات ثابتة</h2>
-              <p>دوائر لا تتحرك، تحتها الاسم.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط الدائرة ليفتح التصنيف.</dd></div>
-                <div><dt>الصورة</dt><dd>في وصف الإعداد: 200×200. وسم الصورة في القالب 96×96، فالصورة تُصغَّر عند العرض.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-14" data-name="تصنيفات ومميزات">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/14.jpeg" alt="تصنيفات ومميزات" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 14 · الصفحة الرئيسية</p>
-              <h2>تصنيفات ومميزات</h2>
-              <p>صورة كبيرة مع أيقونات تصنيفات.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط التصنيف أو الصورة.</dd></div>
-                <div><dt>الصورة</dt><dd>لا يوجد مقاس مكتوب في الإعداد. القالب يضع 180×175 للصورة الكبيرة و54×54 للأيقونة.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-15" data-name="فيديو">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/15.jpeg" alt="فيديو" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 15 · الصفحة الرئيسية</p>
-              <h2>فيديو</h2>
-              <p>فيديو بعرض القسم مع عنوان ووصف وزر.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الفيديو يعمل صامتًا ومتكررًا حسب القالب، والزر ينقل للرابط.</dd></div>
-                <div><dt>الصورة</dt><dd>في وصف الإعداد: 1669×771. هذا مقاس الفيديو المذكور في الإعداد وليس قصًا إجباريًا من الكود.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-16" data-name="ماركات شكل 2">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/16.jpeg" alt="ماركات شكل 2" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 16 · الصفحة الرئيسية</p>
-              <h2>ماركات شكل 2</h2>
-              <p>شعارات تتحرك.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يرى الشعار، والرابط يفتح إن أُضيف في العنصر.</dd></div>
-                <div><dt>الصورة</dt><dd>في وصف الإعداد: 100×100. وسم الصورة في القالب 80×80.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-17" data-name="روابط سريعة شكل 3">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/17.jpeg" alt="روابط سريعة شكل 3" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 17 · الصفحة الرئيسية</p>
-              <h2>روابط سريعة شكل 3</h2>
-              <p>صور كبيرة بعناوين وأزرار.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط الصورة أو الزر.</dd></div>
-                <div><dt>الصورة</dt><dd>في وصف الإعداد: 600×496. وسم الصورة في القالب 600×600، لذلك النسبة في الإعداد تختلف عن وسم العرض.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-18" data-name="من نحن">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/18.jpeg" alt="من نحن" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 18 · الصفحة الرئيسية</p>
-              <h2>من نحن</h2>
-              <p>صورة أو فيديو مع عنوان ونص وزر.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يقرأ النص ويضغط زر التسوق.</dd></div>
-                <div><dt>الصورة</dt><dd>في وصف الإعداد: 600 عرض × 462 طول. وسم الصورة في القالب 500×500.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-19" data-name="بنر ومنتجات">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/19.jpeg" alt="بنر ومنتجات" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 19 · الصفحة الرئيسية</p>
-              <h2>بنر ومنتجات</h2>
-              <p>بانر جانبي بجانب سلايدر منتجات.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط البانر أو يفتح منتجًا من السلايدر.</dd></div>
-                <div><dt>الصورة</dt><dd>في وصف الإعداد: 727×1000. وسم الصورة في القالب 350×450.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-20" data-name="مجموعة صور">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/20.jpeg" alt="مجموعة صور" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 20 · الصفحة الرئيسية</p>
-              <h2>مجموعة صور</h2>
-              <p>سلايدر صور بعناوين.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يختار الصورة.</dd></div>
-                <div><dt>الصورة</dt><dd>في وصف الإعداد: 400×533. وسم الصورة في القالب 250×350.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-21" data-name="روابط سريعة شكل 2">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/21.jpeg" alt="روابط سريعة شكل 2" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 21 · الصفحة الرئيسية</p>
-              <h2>روابط سريعة شكل 2</h2>
-              <p>صور روابط تحت عنوان المجموعة.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط الصورة.</dd></div>
-                <div><dt>الصورة</dt><dd>في وصف الإعداد: 600×496. وسم الصورة في القالب 500×500.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-22" data-name="روابط ومميزات">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/22.jpeg" alt="روابط ومميزات" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 22 · الصفحة الرئيسية</p>
-              <h2>روابط ومميزات</h2>
-              <p>صورة في الوسط وقائمة روابط بأيقونات على الجانبين.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط سطر القسم.</dd></div>
-                <div><dt>الصورة</dt><dd>في وصف الإعداد: الصورة الرئيسية 446×500، والأيقونة 80×80. القالب يعرض الرئيسية بـ 300×500 والأيقونة بـ 80×80.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-23" data-name="العروض والخصومات">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/23.jpeg" alt="العروض والخصومات" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 23 · الصفحة الرئيسية</p>
-              <h2>العروض والخصومات</h2>
-              <p>خلفية بصورة مع عنوان وعداد.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يرى العدّاد. الصورة خلفية وليست بطاقة مستقلة.</dd></div>
-                <div><dt>الصورة</dt><dd>لا يوجد مقاس مكتوب في الإعداد. الصورة تُستخدم كخلفية CSS، والقالب لا يحدد عرضًا أو طولًا بالبكسل.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-24" data-name="عناصر بنرات ونصوص">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/24.jpeg" alt="عناصر بنرات ونصوص" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 24 · الصفحة الرئيسية</p>
-              <h2>عناصر بنرات ونصوص</h2>
-              <p>بطاقات فيها صورة ونص وزر.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط البطاقة.</dd></div>
-                <div><dt>الصورة</dt><dd>في وصف الإعداد: 1132×792. وسم الصورة في القالب 300×300، فالعرض يصغّر الصورة.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-25" data-name="الماركات التجارية">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/25.jpeg" alt="الماركات التجارية" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 25 · الصفحة الرئيسية</p>
-              <h2>الماركات التجارية</h2>
-              <p>شعارات الماركات المسجلة في المتجر، وليست صورًا تُرفع داخل المكوّن فقط.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط الشعار ليفتح منتجات الماركة.</dd></div>
-                <div><dt>الصورة</dt><dd>لا يوجد مقاس مكتوب في الإعداد. وسم الشعار في القالب 125×125.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-26" data-name="المدونة">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/26.jpeg" alt="المدونة" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 26 · الصفحة الرئيسية</p>
-              <h2>المدونة</h2>
-              <p>بطاقات مقالات بصورة وعنوان.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية، والمقال الكامل في صفحة المدونة. الزائر يضغط «قراءة المزيد».</dd></div>
-                <div><dt>الصورة</dt><dd>وسم صورة المقال في هذا المكوّن 350×350. سلايدر المدونة في صفحة المقالات ارتفاعه 300 بكسل، ويصبح 400 من عرض 768 فأكثر. لا يوجد شرط رفع بالبكسل.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-27" data-name="منتجات متحركة مع خلفية">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/27.jpeg" alt="منتجات متحركة مع خلفية" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 27 · الصفحة الرئيسية</p>
-              <h2>منتجات متحركة مع خلفية</h2>
-              <p>خلفية مع سلايدر منتجات.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يتصفح المنتجات فوق الخلفية.</dd></div>
-                <div><dt>الصورة</dt><dd>في وصف الإعداد: خلفية 1233×500. صور المنتجات تتبع نسبة بطاقة المنتج.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-28" data-name="الاسئلة الشائعة">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/28.jpeg" alt="الاسئلة الشائعة" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 28 · الصفحة الرئيسية</p>
-              <h2>الاسئلة الشائعة</h2>
-              <p>أسئلة تُفتح وتُغلق.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يضغط السؤال ليقرأ الإجابة.</dd></div>
-                <div><dt>الصورة</dt><dd>لا يستخدم صورة.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-29" data-name="تواصل معنا">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/29.jpeg" alt="تواصل معنا" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 29 · الصفحة الرئيسية</p>
-              <h2>تواصل معنا</h2>
-              <p>نص، بريد، جوال، عنوان، وخريطة إن أُدخلت.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. البيانات نصوص يكتبها التاجر في إعداد المكوّن، وليست بريدًا ثابتًا داخل ملف الثيم.</dd></div>
-                <div><dt>الصورة</dt><dd>خريطة العرض ارتفاعها 450 بكسل في القالب. لا يوجد مقاس صورة.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-30" data-name="الفروع">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/30.jpeg" alt="الفروع" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 30 · الصفحة الرئيسية</p>
-              <h2>الفروع</h2>
-              <p>تبويبات مدن مع خريطة.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يبدل المدينة فتظهر الخريطة.</dd></div>
-                <div><dt>الصورة</dt><dd>إطار الخريطة عرضه 100% وارتفاعه 450 بكسل. لا يوجد مقاس صورة.</dd></div>
-              </dl>
-            </div>
-          </article>
-<article class="card" id="sec-31" data-name="خصائص المتجر">
-            <button class="shot" type="button">
-              <img src="https://salahhusham.github.io/shofy-salla-docs/imges/31.jpeg" alt="خصائص المتجر" loading="lazy">
-              <span class="shot__hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M15.2 14.1 20 18.9l-1.4 1.4-4.8-4.8z"/></svg>اضغط للتكبير</span>
-            </button>
-            <div class="card-copy">
-              <p class="kicker">سكشن 31 · الصفحة الرئيسية</p>
-              <h2>خصائص المتجر</h2>
-              <p>أيقونات لمميزات مثل الشحن والدعم.</p>
-              <dl class="facts">
-                <div><dt>كيف يستخدمه الزائر</dt><dd>في الصفحة الرئيسية. الزائر يقرأ الميزة، والعنصر ليس زر شراء.</dd></div>
-                <div><dt>الصورة</dt><dd>في وصف الإعداد: يُفضَّل 120×120. وسم الصورة في القالب 60×60.</dd></div>
-              </dl>
-            </div>
-          </article>
-          </div>
-          <p class="empty" id="empty-cards">لا توجد نتيجة مطابقة للبحث.</p>
-        </section>
+        <span class="cat-pill">العروض والترويج</span>
+        <h2>شريط إعلانات</h2>
+        <p class="lead">الشريط في اللقطة نص يتحرك بلا صورة. أيقونة شريط التنبيهات، إن رُفعت، مقاس وسمها في القالب 26 × 26.</p>
+        <div class="badges"><span class="badge">26 × 26</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>إعدادات الثيم · شريط الإعلانات</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/1.jpeg" alt="شريط إعلانات" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>وسم الصورة في القالب</td><td><code>26 × 26</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (0)</h4><p class="empty">إعدادات هذا الجزء عامة أو مربوطة ببيانات المتجر، وليست حقول مكوّن مستقلة.</p></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-2" data-cat="hero">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">الواجهة الرئيسية</span>
+        <h2>سلايدر صور</h2>
+        <p class="lead">المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</p>
+        <div class="badges"><span class="badge">1669 × 668 · 768 × 566</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>slider-imgs.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/2.jpeg" alt="سلايدر صور" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>في إعداد الثيم</td><td><code>1669 × 668</code></td></tr><tr><td>في إعداد الثيم</td><td><code>768 × 566</code></td></tr><tr><td>وسم الصورة في القالب</td><td><code>عرض 1670</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (9)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>بدون هوامش</td><td><span class="type">تفعيل/إيقاف</span></td><td>—</td><td><code>لا</code></td></tr><tr><td>الصورة</td><td><span class="type">صورة</span></td><td>مقاس الصورة 1669 عرض * 668 طول</td><td><code>—</code></td></tr><tr><td>صورة الجوال</td><td><span class="type">صورة</span></td><td>مقاس الصورة 768 عرض * 566 طول</td><td><code>—</code></td></tr><tr><td>لون النص</td><td><span class="type">لون</span></td><td>—</td><td><code>#010F1C</code></td></tr><tr><td>مكان النص</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الفرعي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص الزر</td><td><span class="type">نص</span></td><td>—</td><td><code>تسوق الآن</code></td></tr><tr><td>الرابط</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-3" data-cat="catalog">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">التصنيفات والمجموعات</span>
+        <h2>روابط سريعة</h2>
+        <p class="lead">لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</p>
+        <div class="badges"><span class="badge">106 × 155</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>main-links.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/3.jpeg" alt="روابط سريعة" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>وسم الصورة في القالب</td><td><code>106 × 155</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (10)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>عنوان ترويجي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص اضافي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>لون النص</td><td><span class="type">لون</span></td><td>—</td><td><code>#010F1C</code></td></tr><tr><td>عرض أسهم التحرك</td><td><span class="type">تفعيل/إيقاف</span></td><td>—</td><td><code>نعم</code></td></tr><tr><td>عرض روابط التصنيفات</td><td><span class="type">تفعيل/إيقاف</span></td><td>يمكنك تحديد التصنيفات بدل العناصر الخاصة، مع امكانية عرض صورة التصنيف مع العنصر</td><td><code>لا</code></td></tr><tr><td>حدد التصنيفات</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الصورة</td><td><span class="type">صورة</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الرابط</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-4" data-cat="promo">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">العروض والترويج</span>
+        <h2>خصومات شكل 2</h2>
+        <p class="lead">لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</p>
+        <div class="badges"><span class="badge">550 × 350</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>offers.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/4.jpeg" alt="خصومات شكل 2" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>وسم الصورة في القالب</td><td><code>550 × 350</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (10)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>لون الخلفية</td><td><span class="type">لون</span></td><td>—</td><td><code>#fff</code></td></tr><tr><td>لون النص</td><td><span class="type">لون</span></td><td>—</td><td><code>#010F1C</code></td></tr><tr><td>الصورة</td><td><span class="type">صورة</span></td><td>—</td><td><code>—</code></td></tr><tr><td>طريقة عرض الصورة</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الفرعي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>تفعيل عداد الخصومات</td><td><span class="type">تفعيل/إيقاف</span></td><td>—</td><td><code>لا</code></td></tr><tr><td>حدد تاريخ انتهاء الخصم</td><td><span class="type">نص</span></td><td>—</td><td><code>2025-03-05</code></td></tr><tr><td>نص الزر</td><td><span class="type">نص</span></td><td>—</td><td><code>تسوق الآن</code></td></tr><tr><td>الرابط</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-5" data-cat="products">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">المنتجات</span>
+        <h2>منتجات متحركة</h2>
+        <p class="lead">صور المنتجات تتبع إعداد «طول صورة المنتج»: القيمة الافتراضية 1 وتعطي نسبة عرض 1 / 1.1، والمدى من 0 إلى 5. لا يوجد مقاس رفع بالبكسل.</p>
+        <div class="badges"><span class="badge">نسبة البطاقة</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>products-slider.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/5.jpeg" alt="منتجات متحركة" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>صورة المنتج</td><td><code>النسبة 1 / 1.1 افتراضيًا</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (0)</h4><p class="empty">إعدادات هذا الجزء عامة أو مربوطة ببيانات المتجر، وليست حقول مكوّن مستقلة.</p></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-6" data-cat="promo">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">العروض والترويج</span>
+        <h2>بنرات</h2>
+        <p class="lead">المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</p>
+        <div class="badges"><span class="badge">2881 × 961 · 768 × 983</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>banners.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/6.jpeg" alt="بنرات" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>في إعداد الثيم</td><td><code>2881 × 961</code></td></tr><tr><td>في إعداد الثيم</td><td><code>768 × 983</code></td></tr><tr><td>وسم الصورة في القالب</td><td><code>1800 × 450</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (5)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>بدون حواف دائرية</td><td><span class="type">تفعيل/إيقاف</span></td><td>—</td><td><code>لا</code></td></tr><tr><td>إزالة المسافات بين هذا العنصر والعناصر المجاورة</td><td><span class="type">تفعيل/إيقاف</span></td><td>—</td><td><code>لا</code></td></tr><tr><td>صورة البنر</td><td><span class="type">صورة</span></td><td>مقاس الصورة 2881 عرض * 961 طول</td><td><code>—</code></td></tr><tr><td>صورة البنر في الجوال</td><td><span class="type">صورة</span></td><td>مقاس الصورة 768 عرض * 983 طول</td><td><code>—</code></td></tr><tr><td>الرابط</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-7" data-cat="products">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">المنتجات</span>
+        <h2>منتجات مميزة</h2>
+        <p class="lead">صور المنتجات تتبع إعداد «طول صورة المنتج»: القيمة الافتراضية 1 وتعطي نسبة عرض 1 / 1.1، والمدى من 0 إلى 5. لا يوجد مقاس رفع بالبكسل.</p>
+        <div class="badges"><span class="badge">نسبة البطاقة</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>spicial-products.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/7.jpeg" alt="منتجات مميزة" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>صورة المنتج</td><td><code>النسبة 1 / 1.1 افتراضيًا</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (6)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>لون الخلفية</td><td><span class="type">لون</span></td><td>—</td><td><code>#fff</code></td></tr><tr><td>لون النص</td><td><span class="type">لون</span></td><td>—</td><td><code>#010F1C</code></td></tr><tr><td>عنوان ترويجي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص اضافي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>المنتجات</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-8" data-cat="catalog">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">التصنيفات والمجموعات</span>
+        <h2>صور مربعة</h2>
+        <p class="lead">لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</p>
+        <div class="badges"><span class="badge">200 × 200</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>enhanced-square-banners.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/8.jpeg" alt="صور مربعة" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>وسم الصورة في القالب</td><td><code>200 × 200</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (8)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>عنوان ترويجي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص اضافي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>قائمة الصور</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr><tr><td>صورة البنر</td><td><span class="type">صورة</span></td><td>—</td><td><code>—</code></td></tr><tr><td>عنوان رئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>عنوان فرعي</td><td><span class="type">نص طويل</span></td><td>نص يتم إضافته على الصورة بخط أصغر من العنوان الرئيسي</td><td><code>—</code></td></tr><tr><td>الرابط</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-9" data-cat="media">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">الوسائط والمعارض</span>
+        <h2>مقارنة</h2>
+        <p class="lead">لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</p>
+        <div class="badges"><span class="badge">500 × 500</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>compare-content.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/9.jpeg" alt="مقارنة" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>وسم الصورة في القالب</td><td><code>500 × 500</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (9)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>الصورة 1</td><td><span class="type">صورة</span></td><td>—</td><td><code>—</code></td></tr><tr><td>عنوان الصورة 1</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الصورة 2</td><td><span class="type">صورة</span></td><td>—</td><td><code>—</code></td></tr><tr><td>عنوان الصورة 2</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الفرعي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص اضافي</td><td><span class="type">نص طويل</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص الزر</td><td><span class="type">نص</span></td><td>—</td><td><code>تسوق الآن</code></td></tr><tr><td>الرابط</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-10" data-cat="products">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">المنتجات</span>
+        <h2>منتجات بتبويبات</h2>
+        <p class="lead">صور المنتجات تتبع إعداد «طول صورة المنتج»: القيمة الافتراضية 1 وتعطي نسبة عرض 1 / 1.1، والمدى من 0 إلى 5. لا يوجد مقاس رفع بالبكسل.</p>
+        <div class="badges"><span class="badge">نسبة البطاقة</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>tabs-products.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/10.jpeg" alt="منتجات بتبويبات" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>صورة المنتج</td><td><code>النسبة 1 / 1.1 افتراضيًا</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (8)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>لون الخلفية</td><td><span class="type">لون</span></td><td>—</td><td><code>#fff</code></td></tr><tr><td>لون النص</td><td><span class="type">لون</span></td><td>—</td><td><code>#010F1C</code></td></tr><tr><td>عنوان ترويجي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص اضافي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>تبويبات المنتجات</td><td><span class="type">قائمة عناصر</span></td><td>يمكن إضافة عدة منتجات على شكل مجموعات (تبويبات)، ويمكن للزائر التنقل بينها عن طريق النقر على اسماء التبويبات</td><td><code>—</code></td></tr><tr><td>عنوان التبويب</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>التصنيف</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-11" data-cat="hero">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">الواجهة الرئيسية</span>
+        <h2>اسلايدر ونصوص</h2>
+        <p class="lead">المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</p>
+        <div class="badges"><span class="badge">634 × 372</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>main-slider.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/11.jpeg" alt="اسلايدر ونصوص" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>في إعداد الثيم</td><td><code>634 × 372</code></td></tr><tr><td>وسم الصورة في القالب</td><td><code>500 × 372</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (9)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>عنصر</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr><tr><td>لون الخلفية</td><td><span class="type">لون</span></td><td>—</td><td><code>#fff</code></td></tr><tr><td>لون النص</td><td><span class="type">لون</span></td><td>—</td><td><code>#010F1C</code></td></tr><tr><td>العنوان الفرعي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص توضيحي</td><td><span class="type">نص طويل</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص الزر</td><td><span class="type">نص</span></td><td>—</td><td><code>تسوق الآن</code></td></tr><tr><td>الرابط</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الصورة</td><td><span class="type">صورة</span></td><td>مقاس الصورة 634 عرض * 372 طول</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-12" data-cat="promo">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">العروض والترويج</span>
+        <h2>شريط التنبيهات</h2>
+        <p class="lead">لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</p>
+        <div class="badges"><span class="badge">26 × 26</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>advertisement-bar.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/12.jpeg" alt="شريط التنبيهات" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>وسم الصورة في القالب</td><td><code>26 × 26</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (6)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>لون خلفية شريط الاعلانات</td><td><span class="type">لون</span></td><td>—</td><td><code>#a05f43</code></td></tr><tr><td>الاعلانات</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الصورة</td><td><span class="type">صورة</span></td><td>—</td><td><code>—</code></td></tr><tr><td>عنوان الاعلان</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الرابط</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr><tr><td>لون النص</td><td><span class="type">لون</span></td><td>—</td><td><code>#ffffff</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-13" data-cat="catalog">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">التصنيفات والمجموعات</span>
+        <h2>تصنيفات ثابتة</h2>
+        <p class="lead">المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</p>
+        <div class="badges"><span class="badge">200 × 200</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>category-list.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/13.jpeg" alt="تصنيفات ثابتة" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>في إعداد الثيم</td><td><code>200 × 200</code></td></tr><tr><td>وسم الصورة في القالب</td><td><code>96 × 96</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (8)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>عنوان ترويجي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص اضافي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>التصنيف</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الصورة</td><td><span class="type">صورة</span></td><td>مقاس الصورة 200 عرض * 200 طول</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الفرعي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الرابط</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-14" data-cat="catalog">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">التصنيفات والمجموعات</span>
+        <h2>تصنيفات ومميزات</h2>
+        <p class="lead">لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</p>
+        <div class="badges"><span class="badge">180 × 175 · 54 × 54</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>spicial-categories.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/14.jpeg" alt="تصنيفات ومميزات" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>وسم الصورة في القالب</td><td><code>180 × 175</code></td></tr><tr><td>وسم الصورة في القالب</td><td><code>54 × 54</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (6)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>لون الخلفية</td><td><span class="type">لون</span></td><td>—</td><td><code>#fff</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الصورة الرئيسية</td><td><span class="type">صورة</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الصورة</td><td><span class="type">صورة</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الرابط</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-15" data-cat="media">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">الوسائط والمعارض</span>
+        <h2>فيديو</h2>
+        <p class="lead">المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</p>
+        <div class="badges"><span class="badge">1669 × 771</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>video.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/15.jpeg" alt="فيديو" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><p class="empty">لا يوجد مقاس صورة ثابت لهذا السكشن.</p></div>
+    <div class="panel"><h4>جدول الإعدادات (7)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>رابط الفيديو</td><td><span class="type">رابط</span></td><td>مقاس الفيديو 1669 عرض * 771 طول</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الكلمة</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>لون الكلمات</td><td><span class="type">لون</span></td><td>—</td><td><code>#fff</code></td></tr><tr><td>تفاصيل اضافية</td><td><span class="type">نص طويل</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص الزر</td><td><span class="type">نص</span></td><td>—</td><td><code>تسوق الآن</code></td></tr><tr><td>رابط الزر</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-16" data-cat="content">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">المحتوى والثقة</span>
+        <h2>ماركات شكل 2</h2>
+        <p class="lead">المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</p>
+        <div class="badges"><span class="badge">100 × 100</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>brands-style-2.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/16.jpeg" alt="ماركات شكل 2" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>في إعداد الثيم</td><td><code>100 × 100</code></td></tr><tr><td>وسم الصورة في القالب</td><td><code>80 × 80</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (6)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>عنوان ترويجي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص اضافي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الصورة</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الصورة</td><td><span class="type">صورة</span></td><td>مقاس الصورة 100 عرض * 100 طول</td><td><code>—</code></td></tr><tr><td>الرابط</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-17" data-cat="catalog">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">التصنيفات والمجموعات</span>
+        <h2>روابط سريعة شكل 3</h2>
+        <p class="lead">المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</p>
+        <div class="badges"><span class="badge">600 × 496</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>category-style3.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/17.jpeg" alt="روابط سريعة شكل 3" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>في إعداد الثيم</td><td><code>600 × 496</code></td></tr><tr><td>وسم الصورة في القالب</td><td><code>600 × 600</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (11)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>عنوان ترويجي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص اضافي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الصورة</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الصورة</td><td><span class="type">صورة</span></td><td>مقاس الصورة 600 عرض * 496 طول</td><td><code>—</code></td></tr><tr><td>العنوان الفرعي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>لون العنوان الفرعي</td><td><span class="type">لون</span></td><td>—</td><td><code>#fff</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>لون العنوان الرئيسي</td><td><span class="type">لون</span></td><td>—</td><td><code>#fff</code></td></tr><tr><td>نص الزر</td><td><span class="type">نص</span></td><td>—</td><td><code>تسوق الآن</code></td></tr><tr><td>الرابط</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-18" data-cat="content">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">المحتوى والثقة</span>
+        <h2>من نحن</h2>
+        <p class="lead">المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</p>
+        <div class="badges"><span class="badge">600 × 462</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>about-us.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/18.jpeg" alt="من نحن" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>في إعداد الثيم</td><td><code>600 × 462</code></td></tr><tr><td>وسم الصورة في القالب</td><td><code>500 × 500</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (6)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>صورة البنر</td><td><span class="type">صورة</span></td><td>مقاس الصورة 600 عرض * 462 طول</td><td><code>—</code></td></tr><tr><td>العنوان الفرعي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص توضيحي</td><td><span class="type">نص طويل</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص الزر</td><td><span class="type">نص</span></td><td>—</td><td><code>تسوق الآن</code></td></tr><tr><td>الرابط</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-19" data-cat="promo">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">العروض والترويج</span>
+        <h2>بنر ومنتجات</h2>
+        <p class="lead">المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</p>
+        <div class="badges"><span class="badge">727 × 1000</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>banner-with-products.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/19.jpeg" alt="بنر ومنتجات" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>في إعداد الثيم</td><td><code>727 × 1000</code></td></tr><tr><td>وسم الصورة في القالب</td><td><code>350 × 450</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (12)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>عرض الصورة او الفيديو علي اليسار</td><td><span class="type">تفعيل/إيقاف</span></td><td>—</td><td><code>لا</code></td></tr><tr><td>الصورة</td><td><span class="type">صورة</span></td><td>مقاس الصورة 727 عرض * 1000 طول</td><td><code>—</code></td></tr><tr><td>رابط الفيديو</td><td><span class="type">رابط</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص توضيحي</td><td><span class="type">نص طويل</span></td><td>—</td><td><code>—</code></td></tr><tr><td>تفعيل عداد الخصومات</td><td><span class="type">تفعيل/إيقاف</span></td><td>—</td><td><code>لا</code></td></tr><tr><td>حدد تاريخ انتهاء الخصم</td><td><span class="type">نص</span></td><td>—</td><td><code>2025-03-05</code></td></tr><tr><td>نص الزر</td><td><span class="type">نص</span></td><td>—</td><td><code>تسوق الآن</code></td></tr><tr><td>الرابط</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr><tr><td>تبديل الي منتجات مختارة</td><td><span class="type">تفعيل/إيقاف</span></td><td>هذه الخاصية تمكنك من التبديل بين عرض منتجات تصنيف محدد او منتجات مختاره</td><td><code>لا</code></td></tr><tr><td>التصنيف</td><td><span class="type">قائمة عناصر</span></td><td>اختر التصنيف الذي تريد عرض المنتجات الخاصة به</td><td><code>—</code></td></tr><tr><td>منتجات</td><td><span class="type">قائمة عناصر</span></td><td>اختر المنتجات التي تريد عرضها</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-20" data-cat="media">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">الوسائط والمعارض</span>
+        <h2>مجموعة صور</h2>
+        <p class="lead">المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</p>
+        <div class="badges"><span class="badge">400 × 533</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>gallery.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/20.jpeg" alt="مجموعة صور" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>في إعداد الثيم</td><td><code>400 × 533</code></td></tr><tr><td>وسم الصورة في القالب</td><td><code>250 × 350</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (10)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>لون الخلفية</td><td><span class="type">لون</span></td><td>—</td><td><code>#fff</code></td></tr><tr><td>لون النص</td><td><span class="type">لون</span></td><td>—</td><td><code>#010F1C</code></td></tr><tr><td>عنوان ترويجي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص اضافي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الصورة</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الصورة</td><td><span class="type">صورة</span></td><td>مقاس الصورة 400 عرض * 533 طول</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الفرعي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الرابط</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-21" data-cat="catalog">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">التصنيفات والمجموعات</span>
+        <h2>روابط سريعة شكل 2</h2>
+        <p class="lead">المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</p>
+        <div class="badges"><span class="badge">600 × 496</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>category-style2.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/21.jpeg" alt="روابط سريعة شكل 2" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>في إعداد الثيم</td><td><code>600 × 496</code></td></tr><tr><td>وسم الصورة في القالب</td><td><code>500 × 500</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (7)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>عنوان ترويجي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص اضافي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الصورة</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الصورة</td><td><span class="type">صورة</span></td><td>مقاس الصورة 600 عرض * 496 طول</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الرابط</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-22" data-cat="content">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">المحتوى والثقة</span>
+        <h2>روابط ومميزات</h2>
+        <p class="lead">المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</p>
+        <div class="badges"><span class="badge">446 × 500 · 80 × 80</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>informative.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/22.jpeg" alt="روابط ومميزات" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>في إعداد الثيم</td><td><code>446 × 500</code></td></tr><tr><td>في إعداد الثيم</td><td><code>80 × 80</code></td></tr><tr><td>وسم الصورة في القالب</td><td><code>80 × 80</code></td></tr><tr><td>وسم الصورة في القالب</td><td><code>300 × 500</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (9)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>عنوان ترويجي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص اضافي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الصورة الرئيسية</td><td><span class="type">صورة</span></td><td>مقاس الصورة 446 عرض * 500 طول</td><td><code>—</code></td></tr><tr><td>عنصر</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الصورة</td><td><span class="type">صورة</span></td><td>مقاس الصورة 80 عرض * 80 طول</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الفرعي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الرابط</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-23" data-cat="promo">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">العروض والترويج</span>
+        <h2>العروض والخصومات</h2>
+        <p class="lead">هذا السكشن لا يفرض مقاس صورة.</p>
+        <div class="badges"><span class="badge">بدون صورة ثابتة</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>deal-days.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/23.jpeg" alt="العروض والخصومات" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><p class="empty">لا يوجد مقاس صورة ثابت لهذا السكشن.</p></div>
+    <div class="panel"><h4>جدول الإعدادات (7)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>الصورة</td><td><span class="type">صورة</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الفرعي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>لون العنوان الفرعي</td><td><span class="type">لون</span></td><td>—</td><td><code>#fff</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>لون العنوان الرئيسي</td><td><span class="type">لون</span></td><td>—</td><td><code>#fff</code></td></tr><tr><td>تفعيل عداد الخصومات</td><td><span class="type">تفعيل/إيقاف</span></td><td>—</td><td><code>لا</code></td></tr><tr><td>حدد تاريخ انتهاء الخصم</td><td><span class="type">نص</span></td><td>—</td><td><code>2025-03-05</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-24" data-cat="promo">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">العروض والترويج</span>
+        <h2>عناصر بنرات ونصوص</h2>
+        <p class="lead">المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</p>
+        <div class="badges"><span class="badge">1132 × 792</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>banner-grid.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/24.jpeg" alt="عناصر بنرات ونصوص" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>في إعداد الثيم</td><td><code>1132 × 792</code></td></tr><tr><td>وسم الصورة في القالب</td><td><code>300 × 300</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (5)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>الصورة</td><td><span class="type">صورة</span></td><td>مقاس الصورة 1132 عرض * 792 طول</td><td><code>—</code></td></tr><tr><td>العنوان الفرعي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص الزر</td><td><span class="type">نص</span></td><td>—</td><td><code>تسوق الآن</code></td></tr><tr><td>الرابط</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-25" data-cat="content">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">المحتوى والثقة</span>
+        <h2>الماركات التجارية</h2>
+        <p class="lead">لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</p>
+        <div class="badges"><span class="badge">125 × 125</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>brands.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/25.jpeg" alt="الماركات التجارية" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>وسم الصورة في القالب</td><td><code>125 × 125</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (3)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>العنوان</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>عرض بشكل دائري</td><td><span class="type">تفعيل/إيقاف</span></td><td>—</td><td><code>لا</code></td></tr><tr><td>الماركات التجارية</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-26" data-cat="content">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">المحتوى والثقة</span>
+        <h2>المدونة</h2>
+        <p class="lead">لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</p>
+        <div class="badges"><span class="badge">350 × 350</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>blogs.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/26.jpeg" alt="المدونة" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>وسم الصورة في القالب</td><td><code>350 × 350</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (4)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>عنوان ترويجي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص اضافي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>المدونة</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-27" data-cat="products">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">المنتجات</span>
+        <h2>منتجات متحركة مع خلفية</h2>
+        <p class="lead">المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</p>
+        <div class="badges"><span class="badge">1233 × 500</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>slider-products-with-header.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/27.jpeg" alt="منتجات متحركة مع خلفية" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>في إعداد الثيم</td><td><code>1233 × 500</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (5)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>صورة الخلفية</td><td><span class="type">صورة</span></td><td>* المقاس المناسب للصورة هو 1233×500 بكسل</td><td><code>—</code></td></tr><tr><td>عنوان رئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص توضيحي</td><td><span class="type">نص طويل</span></td><td>—</td><td><code>—</code></td></tr><tr><td>منتجات</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr><tr><td>رابط عرض الكل</td><td><span class="type">قائمة عناصر</span></td><td>عند إختيار رابط فارغ سيتم إخفاء زر 'عرض الكل'</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-28" data-cat="content">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">المحتوى والثقة</span>
+        <h2>الاسئلة الشائعة</h2>
+        <p class="lead">هذا السكشن لا يفرض مقاس صورة.</p>
+        <div class="badges"><span class="badge">بدون صورة ثابتة</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>faqs.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/28.jpeg" alt="الاسئلة الشائعة" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><p class="empty">لا يوجد مقاس صورة ثابت لهذا السكشن.</p></div>
+    <div class="panel"><h4>جدول الإعدادات (5)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>عنوان ترويجي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص اضافي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>السؤال</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الإجابة</td><td><span class="type">نص طويل</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-29" data-cat="content">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">المحتوى والثقة</span>
+        <h2>تواصل معنا</h2>
+        <p class="lead">هذا السكشن لا يفرض مقاس صورة.</p>
+        <div class="badges"><span class="badge">بدون صورة ثابتة</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>contact-us.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/29.jpeg" alt="تواصل معنا" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><p class="empty">لا يوجد مقاس صورة ثابت لهذا السكشن.</p></div>
+    <div class="panel"><h4>جدول الإعدادات (8)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>عنوان ترويجي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص اضافي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص التواصل</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>البريد الإلكتروني</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>رقم الجوال</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الخريطة</td><td><span class="type">نص طويل</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-30" data-cat="content">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">المحتوى والثقة</span>
+        <h2>الفروع</h2>
+        <p class="lead">هذا السكشن لا يفرض مقاس صورة.</p>
+        <div class="badges"><span class="badge">بدون صورة ثابتة</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>branches.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/30.jpeg" alt="الفروع" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><p class="empty">لا يوجد مقاس صورة ثابت لهذا السكشن.</p></div>
+    <div class="panel"><h4>جدول الإعدادات (6)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>عنوان ترويجي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص اضافي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الفروع</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr><tr><td>عنوان الفرع</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>تضمين الخريطة</td><td><span class="type">نص طويل</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-31" data-cat="content">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">المحتوى والثقة</span>
+        <h2>خصائص المتجر</h2>
+        <p class="lead">المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</p>
+        <div class="badges"><span class="badge">120 × 120</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>features-section.twig</code></div>
+    </header>
+    <figure class="detail-shot"><img src="https://salahhusham.github.io/shofy-salla-docs/imges/31.jpeg" alt="خصائص المتجر" loading="lazy"></figure>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>في إعداد الثيم</td><td><code>120 × 120</code></td></tr><tr><td>وسم الصورة في القالب</td><td><code>60 × 60</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (5)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>لون النص</td><td><span class="type">لون</span></td><td>—</td><td><code>#010F1C</code></td></tr><tr><td>المميزات</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr><tr><td>الصورة</td><td><span class="type">صورة</span></td><td>يفضل ان يكون مقاس الصورة 120 * 120 بكسل</td><td><code>—</code></td></tr><tr><td>العنوان</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>العنوان الفرعي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-32" data-cat="social">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">آراء العملاء</span>
+        <h2>آراء عملاء مخصصة</h2>
+        <p class="lead">المقاس مكتوب في وصف إعداد المكوّن داخل الثيم.</p>
+        <div class="badges"><span class="badge">68 × 68</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>custom-testimonials.twig</code></div>
+    </header>
+    <div class="shot-missing">لا توجد لقطة محفوظة لهذا السكشن في دليل الصور.</div>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>في إعداد الثيم</td><td><code>68 × 68</code></td></tr><tr><td>وسم الصورة في القالب</td><td><code>68 × 68</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (5)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>التقييمات</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr><tr><td>اسم العميل</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>صورة العميل</td><td><span class="type">صورة</span></td><td>المقاس المناسب للصورة هو 68*68 بكسل</td><td><code>—</code></td></tr><tr><td>عدد النجوم</td><td><span class="type">رقم</span></td><td>—</td><td><code>5</code></td></tr><tr><td>نص التقييم</td><td><span class="type">نص طويل</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-33" data-cat="hero">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">الواجهة الرئيسية</span>
+        <h2>اسلايدر مميز</h2>
+        <p class="lead">لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</p>
+        <div class="badges"><span class="badge">عرض 1670</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>spicial-slider.twig</code></div>
+    </header>
+    <div class="shot-missing">لا توجد لقطة محفوظة لهذا السكشن في دليل الصور.</div>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>وسم الصورة في القالب</td><td><code>عرض 1670</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (8)</h4><div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody><tr><td>الصورة او الفيديو بالحجم الطبيعي</td><td><span class="type">تفعيل/إيقاف</span></td><td>يجب مراعاة ان تكون الصور والفيديوهات بنفس المقاس</td><td><code>لا</code></td></tr><tr><td>الصورة</td><td><span class="type">صورة</span></td><td>—</td><td><code>—</code></td></tr><tr><td>رابط الفيديو</td><td><span class="type">رابط</span></td><td>—</td><td><code>—</code></td></tr><tr><td>لون النص</td><td><span class="type">لون</span></td><td>—</td><td><code>#fff</code></td></tr><tr><td>العنوان الرئيسي</td><td><span class="type">نص</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص توضيحي</td><td><span class="type">نص طويل</span></td><td>—</td><td><code>—</code></td></tr><tr><td>نص الزر</td><td><span class="type">نص</span></td><td>—</td><td><code>تسوق الآن</code></td></tr><tr><td>الرابط</td><td><span class="type">قائمة عناصر</span></td><td>—</td><td><code>—</code></td></tr></tbody></table></div></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+<article class="detail" id="sec-34" data-cat="products">
+    <header class="detail-head">
+      <div>
+        <span class="cat-pill">المنتجات</span>
+        <h2>نقاط منتجات</h2>
+        <p class="lead">لا يوجد مقاس رفع في الإعداد. المقاس مأخوذ من وسم الصورة في القالب (width و height).</p>
+        <div class="badges"><span class="badge">1200 × 550 · 60 × 60</span></div>
+      </div>
+      <div class="file-box"><span>ملف السكشن</span><code>points-products.twig</code></div>
+    </header>
+    <div class="shot-missing">لا توجد لقطة محفوظة لهذا السكشن في دليل الصور.</div>
+    <div class="panel"><h4>المقاسات</h4><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody><tr><td>وسم الصورة في القالب</td><td><code>1200 × 550</code></td></tr><tr><td>وسم الصورة في القالب</td><td><code>60 × 60</code></td></tr></tbody></table></div>
+    <div class="panel"><h4>جدول الإعدادات (0)</h4><p class="empty">إعدادات هذا الجزء عامة أو مربوطة ببيانات المتجر، وليست حقول مكوّن مستقلة.</p></div>
+    <a class="back-top" href="#sections">↑ العودة لقائمة السكاشن</a>
+  </article>
+        </div>
+      </div>
+    </section>
 
-        <section class="guide" id="more">
-          <div class="section-head">
-            <h2>سكاشن موجودة في الثيم بدون لقطة هنا</h2>
-            <p>هذه المكوّنات معرفة في الثيم، ولم تُرفق لها صورة في مجلد الدليل. الشرح من الملفات فقط.</p>
-          </div>
-          <div class="extra-grid">
-<article class="extra-card" data-name="نقاط منتجات">
-              <h3>نقاط منتجات</h3>
-              <p>يعرض منتجات النقاط مع بانر. وسم البانر في القالب 1200×550، وصورة المنتج داخله 60×60. لا يوجد مقاس رفع مكتوب في الإعداد.</p>
-              <p>لا توجد لقطة في هذا الدليل لهذا المكوّن. </p>
-            </article>
-<article class="extra-card" data-name="اسلايدر مميز">
-              <h3>اسلايدر مميز</h3>
-              <p>سلايدر صور أو فيديو. الإعداد يقول إن الصور والفيديوهات لازم تكون بنفس المقاس، بدون رقم بكسل. وسم الصورة عرضه 1670.</p>
-              <p>لا توجد لقطة محفوظة لهذا المكوّن. </p>
-            </article>
-<article class="extra-card" data-name="آراء عملاء مخصصة">
-              <h3>آراء عملاء مخصصة</h3>
-              <p>تقييمات باسم ونص ونجوم وصورة عميل. المقاس المكتوب في الإعداد لصورة العميل 68×68 بكسل.</p>
-              <p>لا توجد لقطة محفوظة لهذا المكوّن. </p>
-            </article>
-          </div>
-        </section>
+    <section class="block faq" id="faq">
+      <div class="wrap">
+        <h2>أسئلة شائعة</h2>
+        <details open>
+          <summary>هل المقاس لازم يكون بالبكسل حرفياً؟</summary>
+          <p>إذا كان المقاس مكتوباً في إعداد المكوّن فالأفضل نفس النسبة. إذا كان مأخوذاً من وسم القالب فهو مقاس العرض، والصورة الأكبر بنفس النسبة تظهر أوضح.</p>
+        </details>
+        <details>
+          <summary>من وين أخصّص السكاشن؟</summary>
+          <p>من محرر الثيم في لوحة سلة. أسماء السكاشن هنا هي نفسها أسماء المكوّنات في الثيم.</p>
+        </details>
+        <details>
+          <summary>كيف أتواصل للدعم؟</summary>
+          <p>بريد مطور الثيم <a href="mailto:techpioneers90@gmail.com">techpioneers90@gmail.com</a>. رقم واتساب المتجر يُضبط من إعداد الثيم وليس مكتوباً هنا.</p>
+        </details>
+      </div>
+    </section>
 
-        <section class="guide" id="pages">
-          <div class="section-head">
-            <h2>صفحات المتجر</h2>
-            <p>الثيم لا يثبت رابط متجر واحد. الروابط تُبنى وقت التشغيل من store.url الذي ترسله سلة.</p>
-          </div>
-          <div class="page-grid">
-<article class="extra-card" data-name="الصفحة الرئيسية"><h3>الصفحة الرئيسية</h3><p>الصفحة الرئيسية تعرض المكوّنات بالترتيب الذي يرتبه التاجر من محرر الثيم. الهيدر والفوتر يأتيان من القالب حولها.</p></article>
-<article class="extra-card" data-name="صفحة المنتج"><h3>صفحة المنتج</h3><p>الصور تكبر حسب إعداد «تكبير الصور». طريقة العرض إما إظهار الصورة كاملة (Contain) أو تغطيتها مع حفظ النسبة (Cover). زر الإضافة يمكن تثبيته أسفل الجوال.</p></article>
-<article class="extra-card" data-name="السلة"><h3>السلة</h3><p>رابطها store.url/cart. يمكن رفع «صورة البانر» من إعدادات الثيم، بدون مقاس مكتوب في الملف.</p></article>
-<article class="extra-card" data-name="الحساب"><h3>الحساب</h3><p>الملف الشخصي والطلبات والمفضلة والمحفظة والتنبيهات صفحات جاهزة في الثيم، وروابطها تحت store.url.</p></article>
-<article class="extra-card" data-name="الماركات والمقالات"><h3>الماركات والمقالات</h3><p>بانر صفحة الماركة في القالب 1200×300 مع قص cover وارتفاع أقصى 300. هذا تلميح عرض، وليس شرط رفع.</p></article>
-<article class="extra-card" data-name="الولاء وصفحة الشكر"><h3>الولاء وصفحة الشكر</h3><p>صفحتا loyalty و thank-you موجودتان في الثيم. لا يوجد لهما مقاس صورة خاص في الإعدادات.</p></article>
-          </div>
-          <div class="note" id="store-link">
-            <strong>رابط المتجر</strong>
-            <p>الهيدر والفوتر وزر السلة والحساب تستخدم store.url. لا يوجد دومين متجر مكتوب داخل ملفات الثيم، لذلك زر «رابط المتجر» في هذا الدليل ينقلك لهذا التوضيح بدل فتح عنوان غير موجود.</p>
-          </div>
-          <div class="note" id="whatsapp-note">
-            <strong>واتساب المتجر</strong>
-            <p>الأيقونة العائمة تظهر فقط إذا فُعّل «إظهار أيقونة الواتساب». الرابط في القالب هو https://wa.me/+رقم الإعداد مع نص الرسالة. القيمة الحالية في ملف الثيم للرقم هي 0، أي أنه غير مضبوط. اكتب الرقم بالمفتاح الدولي بدون + وبدون مسافات. موضع الأيقونة يمين الصفحة إذا فُعّل «عرض أيقونة الواتساب على اليمين».</p>
-          </div>
-        </section>
-
-        <section class="guide" id="sizes">
-          <div class="section-head">
-            <h2>مقاسات الصور</h2>
-            <p>العمود الأول هو النص المكتوب للتاجر داخل إعداد المكوّن. العمود الثاني هو أبعاد وسم الصورة أو قاعدة CSS. إذا اختلف العمودان، المتجر لا يفرض القص على مقاس الرفع.</p>
-          </div>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>العنصر</th>
-                  <th>الاستخدام</th>
-                  <th>في إعداد الثيم</th>
-                  <th>في القالب</th>
-                  <th>نوع المعلومة</th>
-                </tr>
-              </thead>
-              <tbody id="size-rows">
-<tr data-name="سلايدر صور"><td>سلايدر صور</td><td>صورة الشريحة على الديسكتوب والجوال</td><td>1669×668 و 768×566</td><td>العرض 1670 بلا طول</td><td>مكتوب في وصف إعداد المكوّن</td></tr>
-<tr data-name="بنرات"><td>بنرات</td><td>بانر الديسكتوب وبانر الجوال</td><td>2881×961 و 768×983</td><td>1800×450</td><td>المقاس من وصف الإعداد. وسم القالب لا يقص الصورة</td></tr>
-<tr data-name="اسلايدر ونصوص"><td>اسلايدر ونصوص</td><td>صورة الشريحة</td><td>634×372</td><td>500×372</td><td>المقاس من وصف الإعداد</td></tr>
-<tr data-name="فيديو"><td>فيديو</td><td>ملف الفيديو</td><td>1669×771</td><td>العرض 100%</td><td>المقاس من وصف الإعداد، وليس قصًا إجباريًا</td></tr>
-<tr data-name="منتجات متحركة مع خلفية"><td>منتجات متحركة مع خلفية</td><td>صورة الخلفية</td><td>1233×500</td><td>غير محددة في القالب</td><td>المقاس من وصف الإعداد</td></tr>
-<tr data-name="من نحن"><td>من نحن</td><td>صورة القسم</td><td>600×462</td><td>500×500</td><td>المقاس من وصف الإعداد</td></tr>
-<tr data-name="بنر ومنتجات"><td>بنر ومنتجات</td><td>صورة البانر الجانبي</td><td>727×1000</td><td>350×450</td><td>المقاس من وصف الإعداد</td></tr>
-<tr data-name="مجموعة صور"><td>مجموعة صور</td><td>صورة المعرض</td><td>400×533</td><td>250×350</td><td>المقاس من وصف الإعداد</td></tr>
-<tr data-name="عناصر بنرات ونصوص"><td>عناصر بنرات ونصوص</td><td>صورة البطاقة</td><td>1132×792</td><td>300×300</td><td>المقاس من وصف الإعداد. العرض يصغّر الصورة</td></tr>
-<tr data-name="روابط سريعة شكل 2 وشكل 3"><td>روابط سريعة شكل 2 وشكل 3</td><td>صورة الرابط</td><td>600×496</td><td>500×500 للشكل 2، و600×600 للشكل 3</td><td>المقاس من وصف الإعداد</td></tr>
-<tr data-name="روابط ومميزات"><td>روابط ومميزات</td><td>الصورة الرئيسية والأيقونة</td><td>446×500 و 80×80</td><td>300×500 و 80×80</td><td>المقاس من وصف الإعداد</td></tr>
-<tr data-name="تصنيفات ثابتة"><td>تصنيفات ثابتة</td><td>صورة التصنيف</td><td>200×200</td><td>96×96</td><td>المقاس من وصف الإعداد</td></tr>
-<tr data-name="ماركات شكل 2"><td>ماركات شكل 2</td><td>شعار</td><td>100×100</td><td>80×80</td><td>المقاس من وصف الإعداد</td></tr>
-<tr data-name="خصائص المتجر"><td>خصائص المتجر</td><td>أيقونة الميزة</td><td>يُفضَّل 120×120</td><td>60×60</td><td>توصية مكتوبة في الإعداد، والقالب يعرضها أصغر</td></tr>
-<tr data-name="آراء عملاء مخصصة"><td>آراء عملاء مخصصة</td><td>صورة العميل</td><td>68×68</td><td>68×68</td><td>المقاس من وصف الإعداد</td></tr>
-<tr data-name="شريط التنبيهات"><td>شريط التنبيهات</td><td>أيقونة الرسالة</td><td>غير مكتوب</td><td>26×26</td><td>تلميح عرض في القالب فقط</td></tr>
-<tr data-name="روابط سريعة"><td>روابط سريعة</td><td>صورة الاختصار</td><td>غير مكتوب</td><td>106×155</td><td>تلميح عرض في القالب فقط</td></tr>
-<tr data-name="صور مربعة"><td>صور مربعة</td><td>صورة المربع</td><td>غير مكتوب</td><td>200×200</td><td>تلميح عرض في القالب فقط</td></tr>
-<tr data-name="خصومات شكل 2"><td>خصومات شكل 2</td><td>صورة العرض</td><td>غير مكتوب</td><td>550×350</td><td>تلميح عرض. القص يتبع إعداد الاحتواء أو الغلاف</td></tr>
-<tr data-name="مقارنة"><td>مقارنة</td><td>صورتان</td><td>غير مكتوب</td><td>500×500</td><td>تلميح عرض في القالب فقط</td></tr>
-<tr data-name="الماركات التجارية"><td>الماركات التجارية</td><td>شعار الماركة</td><td>غير مكتوب</td><td>125×125</td><td>الشعار يأتي من بيانات الماركة</td></tr>
-<tr data-name="المدونة"><td>المدونة</td><td>صورة المقال</td><td>غير مكتوب</td><td>350×350</td><td>سلايدر صفحة المدونة ارتفاعه 300، و400 من 768px</td></tr>
-<tr data-name="بطاقة منتج سلة"><td>بطاقة منتج سلة</td><td>صورة المنتج داخل البطاقة القياسية</td><td>لا يوجد مقاس بكسل</td><td>النسبة 1 / 1.{قيمة الإعداد}</td><td>القيمة الافتراضية 1 فتصبح النسبة 1 / 1.1. المدى من 0 إلى 5</td></tr>
-<tr data-name="قائمة منتجات أفقية"><td>قائمة منتجات أفقية</td><td>صورة المنتج عندما تكون بجانب النص</td><td>لا يوجد مقاس بكسل</td><td>1/1 ثم 1/0.8 تحت 768px ثم 1/1 تحت 450px</td><td>نِسب عرض من CSS، وليست شرط رفع</td></tr>
-<tr data-name="بانر صفحة الماركة"><td>بانر صفحة الماركة</td><td>غلاف صفحة ماركة واحدة</td><td>غير مكتوب</td><td>1200×300 وارتفاع أقصى 300 مع cover</td><td>تلميح عرض في القالب</td></tr>
-<tr data-name="خريطة التواصل والفروع"><td>خريطة التواصل والفروع</td><td>إطار الخريطة</td><td>غير مكتوب</td><td>العرض 100% والارتفاع 450</td><td>مقاس الإطار وليس مقاس صورة</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <p class="empty" id="empty-sizes">لا توجد نتيجة مطابقة في جدول المقاسات.</p>
-        </section>
+    <div class="wrap" id="contact">
+      <div class="cta">
+        <h2>جهّز صور شوفاي من جدول المقاسات</h2>
+        <p>المقاس المكتوب في الإعداد هو المطلوب. المقاس المأخوذ من القالب هو حجم العرض الحالي.</p>
+        <a class="btn btn-gold" href="mailto:techpioneers90@gmail.com">راسل مطور الثيم</a>
+        <a class="btn btn-ghost" href="#sizes">راجع المقاسات</a>
+        <div class="contact-row">
+          <a class="contact-pill" href="mailto:techpioneers90@gmail.com">✉ techpioneers90@gmail.com</a>
+          <a class="contact-pill" href="#whatsapp">واتساب من إعداد الثيم</a>
+        </div>
       </div>
     </div>
   </main>
-  <footer class="site-footer" id="contact">
-    <div class="wrap footer-panel">
-      <h2>تواصل معنا</h2>
-      <p class="footer-lead">أزرار الدليل تستخدم ما هو موجود فعلًا في ملفات الثيم. فيسبوك غير موجود كرابط ثابت، وروابط السوشيال في واجهة المتجر تأتي من مكوّن salla-social في الفوتر حسب لوحة سلة.</p>
-      <div class="actions">
-        <a class="btn btn-wa" href="#whatsapp-note">
-          <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 3.2a8.7 8.7 0 0 0-7.5 13l-.8 2.9 3-.8a8.7 8.7 0 0 0 13.2-7.5 8.7 8.7 0 0 0-7.9-7.6zm5 12c-.2.6-1.2 1.1-1.6 1.2-.4.1-.9.1-1.5-.1-.3-.1-.8-.3-1.4-.5-2.4-1-4-3.5-4.1-3.6-.1-.2-1-1.3-1-2.5s.6-1.7.8-2c.2-.2.5-.3.8-.3h.3c.2 0 .4 0 .5.4.2.6.7 1.8.8 1.9.1.1.1.3 0 .4-.1.2-.2.3-.3.4l-.3.4c-.1.1-.2.2-.1.5.1.2.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1.1-.1.6-.7.7-.9.1-.2.3-.2.5-.1.2.1 1.3.6 1.5.7.2.1.4.2.4.3.1.2.1.6-.1 1.2z"/></svg></span>
-          إعداد واتساب
-        </a>
-        <a class="btn btn-mail" href="mailto:techpioneers90@gmail.com">
-          <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4.5 7.5 7.5 6 7.5-6"/></svg></span>
-          بريد مطور الثيم
-        </a>
-        <a class="btn btn-store" href="#store-link">
-          <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1v-9.5z"/></svg></span>
-          رابط المتجر
-        </a>
-      </div>
+  <footer class="site">
+    <div class="wrap foot">
+      <div>دليل ثيم شوفاي</div>
+      <div>صور الدليل من مجلد imges</div>
     </div>
   </footer>
-  <a class="to-top" href="#top" aria-label="العودة للأعلى">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 6.5 5.5 13l1.4 1.4L12 9.3l5.1 5.1L18.5 13 12 6.5z"/></svg>
-  </a>
-  <div class="lightbox" id="lightbox" hidden>
-    <button class="lightbox__close" id="lightbox-close" type="button" aria-label="إغلاق الصورة">×</button>
-    <img id="lightbox-img" alt="">
-  </div>
   <script>
-    (function () {
-      var header = document.querySelector(".site-header");
-      var toTop = document.querySelector(".to-top");
-      var box = document.getElementById("lightbox");
-      var boxImg = document.getElementById("lightbox-img");
-      var closeBtn = document.getElementById("lightbox-close");
-      var search = document.getElementById("guide-search");
-      var cards = Array.prototype.slice.call(document.querySelectorAll(".card, .extra-card"));
-      var rows = Array.prototype.slice.call(document.querySelectorAll("#size-rows tr"));
-      var emptyCards = document.getElementById("empty-cards");
-      var emptySizes = document.getElementById("empty-sizes");
-      var last = null;
-
-      function onScroll() {
-        header.classList.toggle("is-scrolled", window.scrollY > 8);
-        toTop.classList.toggle("is-visible", window.scrollY > 640);
-      }
-      onScroll();
-      window.addEventListener("scroll", onScroll, { passive: true });
-
-      function openBox(src, alt, trigger) {
-        last = trigger;
-        boxImg.src = src;
-        boxImg.alt = alt || "";
-        box.hidden = false;
-        document.body.classList.add("is-locked");
-        closeBtn.focus();
-      }
-      function closeBox() {
-        box.hidden = true;
-        boxImg.removeAttribute("src");
-        document.body.classList.remove("is-locked");
-        if (last) last.focus();
-      }
-      document.querySelectorAll(".shot").forEach(function (btn) {
-        btn.addEventListener("click", function () {
-          var img = btn.querySelector("img");
-          openBox(img.currentSrc || img.src, img.alt, btn);
-        });
+    var filters = document.getElementById("filters");
+    var cards = Array.prototype.slice.call(document.querySelectorAll("#cards .sec-card"));
+    var details = Array.prototype.slice.call(document.querySelectorAll("#details .detail"));
+    var search = document.getElementById("search");
+    var active = "all";
+    function apply() {
+      var q = (search.value || "").trim();
+      cards.forEach(function (card) {
+        var okCat = active === "all" || card.getAttribute("data-cat") === active;
+        var okQ = !q || card.innerText.indexOf(q) !== -1;
+        card.classList.toggle("hidden", !(okCat && okQ));
       });
-      closeBtn.addEventListener("click", closeBox);
-      box.addEventListener("click", function (event) {
-        if (event.target === box) closeBox();
+      details.forEach(function (d) {
+        var okCat = active === "all" || d.getAttribute("data-cat") === active;
+        var okQ = !q || d.innerText.indexOf(q) !== -1;
+        d.classList.toggle("hidden", !(okCat && okQ));
       });
-      document.addEventListener("keydown", function (event) {
-        if (event.key === "Escape" && !box.hidden) closeBox();
-      });
-
-      function applyFilter() {
-        var q = (search.value || "").trim().toLowerCase();
-        var shownCards = 0;
-        var shownRows = 0;
-        cards.forEach(function (el) {
-          var ok = !q || (el.getAttribute("data-name") || "").toLowerCase().indexOf(q) !== -1 || el.textContent.toLowerCase().indexOf(q) !== -1;
-          el.classList.toggle("is-hidden", !ok);
-          if (ok && el.classList.contains("card")) shownCards += 1;
-        });
-        rows.forEach(function (el) {
-          var ok = !q || el.textContent.toLowerCase().indexOf(q) !== -1;
-          el.classList.toggle("is-hidden", !ok);
-          if (ok) shownRows += 1;
-        });
-        emptyCards.classList.toggle("is-visible", q && shownCards === 0);
-        emptySizes.classList.toggle("is-visible", q && shownRows === 0);
-      }
-      search.addEventListener("input", applyFilter);
-    })();
+    }
+    filters.addEventListener("click", function (e) {
+      var btn = e.target.closest(".filter");
+      if (!btn) return;
+      active = btn.getAttribute("data-filter");
+      filters.querySelectorAll(".filter").forEach(function (b) { b.classList.toggle("active", b === btn); });
+      apply();
+    });
+    search.addEventListener("input", apply);
   </script>
 </body>
 </html>
