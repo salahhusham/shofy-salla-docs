@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تفاصيل السكشن | دليل ثيم شوفاي</title>
+  <meta name="description" content="شرح سكشن من ثيم شوفاي مع المقاسات والإعدادات.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html"><img src="Rivio_Logo.png" alt="Rivio"><span class="brand-tag">دليل شوفاي</span></a>
+      <nav class="nav-links">
+        <a data-nav href="index.html">الرئيسية</a>
+        <a data-nav href="sections.html">السكاشن</a>
+        <a data-nav href="sizes.html">المقاسات</a>
+        <a data-nav href="header.html">الهيدر</a>
+        <a data-nav href="footer.html">الفوتر</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="wrap" id="root">
+      <p class="empty">جاري التحميل…</p>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="wrap foot">
+      <div><img src="Rivio_Logo.png" alt="Rivio"></div>
+      <div>دليل ثيم شوفاي · تفاصيل السكشن</div>
+    </div>
+  </footer>
+
+  <script src="sections-data.js"></script>
+  <script src="site.js"></script>
+  <script>
+    function qs(name) {
+      var m = location.search.match(new RegExp("[?&]" + name + "=([^&]+)"));
+      return m ? decodeURIComponent(m[1]) : null;
+    }
+    var id = parseInt(qs("id"), 10);
+    var root = document.getElementById("root");
+    var s = (window.SECTIONS || []).find(function (x) { return x.id === id; });
+
+    if (!s) {
+      root.innerHTML = '<p class="empty">السكشن غير موجود. <a href="sections.html">العودة للقائمة</a></p>';
+    } else {
+      document.title = s.name + " | دليل ثيم شوفاي";
+
+      var sizesHtml = "";
+      if (s.sizes && s.sizes.length) {
+        sizesHtml = '<div class="table-wrap"><table><thead><tr><th>المصدر</th><th>المقاس</th></tr></thead><tbody>' +
+          s.sizes.map(function (r) {
+            return "<tr><td>" + r.source + "</td><td><code>" + r.size + "</code></td></tr>";
+          }).join("") +
+          "</tbody></table></div>";
+      } else {
+        sizesHtml = '<p class="empty">لا يوجد مقاس صورة ثابت لهذا السكشن.</p>';
+      }
+
+      var settingsHtml = "";
+      if (s.settings && s.settings.length) {
+        settingsHtml = '<div class="table-wrap"><table><thead><tr><th>الإعداد</th><th>النوع</th><th>ملاحظة / مقاس</th><th>افتراضي</th></tr></thead><tbody>' +
+          s.settings.map(function (r) {
+            return "<tr><td>" + r.label + '</td><td><span class="type">' + r.type + "</span></td><td>" +
+              (r.note || "—") + "</td><td><code>" + r.default + "</code></td></tr>";
+          }).join("") +
+          "</tbody></table></div>";
+      } else {
+        settingsHtml = '<p class="empty">إعدادات هذا الجزء عامة أو مربوطة ببيانات المتجر.</p>';
+      }
+
+      var shot = s.img
+        ? '<div class="shot-box"><img src="' + s.img + '" alt="' + s.name + '"></div>'
+        : '<div class="shot-box"><div class="shot-missing">لا توجد لقطة محفوظة لهذا السكشن.</div></div>';
+
+      var prev = window.SECTIONS.find(function (x) { return x.id === s.id - 1; });
+      var next = window.SECTIONS.find(function (x) { return x.id === s.id + 1; });
+
+      root.innerHTML =
+        '<div class="crumb"><a href="sections.html">السكاشن</a> / ' + s.name + "</div>" +
+        '<div class="back-row">' +
+        '<a class="btn btn-ghost" href="sections.html">← كل السكاشن</a>' +
+        (prev ? '<a class="btn btn-ghost" href="section.html?id=' + prev.id + '">السابق: ' + prev.name + "</a>" : "") +
+        (next ? '<a class="btn btn-ghost" href="section.html?id=' + next.id + '">التالي: ' + next.name + "</a>" : "") +
+        "</div>" +
+        '<div class="detail-layout">' +
+        "<div>" +
+        '<div class="panel">' +
+        '<span class="cat-pill">' + s.catLabel + "</span>" +
+        "<h1 style=\"margin:0 0 .5rem;font-family:var(--display);font-size:clamp(1.5rem,3vw,2rem)\">" + s.name + "</h1>" +
+        '<p class="lead">' + s.lead + "</p>" +
+        '<div class="badges"><span class="badge">' + s.sizeLabel + "</span></div>" +
+        "</div>" +
+        '<div class="panel"><h3>المقاسات</h3>' + sizesHtml + "</div>" +
+        '<div class="panel"><h3>الإعدادات</h3>' + settingsHtml + "</div>" +
+        "</div>" +
+        "<div>" + shot + "</div>" +
+        "</div>";
+    }
+  </script>
+</body>
+</html>

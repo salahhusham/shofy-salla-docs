@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>السكاشن | دليل ثيم شوفاي</title>
+  <meta name="description" content="قائمة سكاشن ثيم شوفاي مع شرح مختصر ومقاس الصور.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html"><img src="Rivio_Logo.png" alt="Rivio"><span class="brand-tag">دليل شوفاي</span></a>
+      <nav class="nav-links">
+        <a data-nav href="index.html">الرئيسية</a>
+        <a data-nav href="sections.html">السكاشن</a>
+        <a data-nav href="sizes.html">المقاسات</a>
+        <a data-nav href="header.html">الهيدر</a>
+        <a data-nav href="footer.html">الفوتر</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="wrap">
+      <div class="page-head">
+        <div class="eyebrow">34 سكشن</div>
+        <h1>سكاشن الثيم</h1>
+        <p>اضغط السكشن اللي تحتاجه. كل سكشن في صفحة لوحده فيها الشرح والمقاسات والإعدادات.</p>
+      </div>
+
+      <div class="toolbar">
+        <input class="search" id="search" type="search" placeholder="ابحث باسم السكشن…">
+        <div class="filters" id="filters">
+          <button type="button" class="filter active" data-filter="all">الكل</button>
+          <button type="button" class="filter" data-filter="hero">الواجهة الرئيسية</button>
+          <button type="button" class="filter" data-filter="promo">العروض والترويج</button>
+          <button type="button" class="filter" data-filter="catalog">التصنيفات والمجموعات</button>
+          <button type="button" class="filter" data-filter="products">المنتجات</button>
+          <button type="button" class="filter" data-filter="media">الوسائط والمعارض</button>
+          <button type="button" class="filter" data-filter="social">آراء العملاء</button>
+          <button type="button" class="filter" data-filter="content">المحتوى والثقة</button>
+        </div>
+      </div>
+
+      <div id="groups"></div>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="wrap foot">
+      <div><img src="Rivio_Logo.png" alt="Rivio"></div>
+      <div>دليل ثيم شوفاي · السكاشن</div>
+    </div>
+  </footer>
+
+  <script src="sections-data.js"></script>
+  <script src="site.js"></script>
+  <script>
+    var order = ["hero", "promo", "catalog", "products", "media", "social", "content", "other"];
+    var labels = {
+      hero: "الواجهة الرئيسية",
+      promo: "العروض والترويج",
+      catalog: "التصنيفات والمجموعات",
+      products: "المنتجات",
+      media: "الوسائط والمعارض",
+      social: "آراء العملاء",
+      content: "المحتوى والثقة",
+      other: "أخرى"
+    };
+    var root = document.getElementById("groups");
+    var filters = document.getElementById("filters");
+    var search = document.getElementById("search");
+    var active = "all";
+
+    function cardHtml(s) {
+      var thumb = s.img
+        ? '<div class="card-thumb"><img src="' + s.img + '" alt="' + s.name + '" loading="lazy"></div>'
+        : '<div class="card-thumb missing">لا توجد لقطة</div>';
+      return (
+        '<a class="sec-card" href="section.html?id=' + s.id + '" data-cat="' + s.cat + '" data-name="' + s.name + '">' +
+        thumb +
+        '<div class="sec-body">' +
+        '<span class="sec-num">' + s.num + '</span>' +
+        "<h3>" + s.name + "</h3>" +
+        "<p>" + s.short + "</p>" +
+        '<div class="sec-meta"><span>' + s.sizeLabel + "</span><span>" + s.catLabel + "</span></div>" +
+        "</div></a>"
+      );
+    }
+
+    function render() {
+      var q = (search.value || "").trim();
+      var html = "";
+      order.forEach(function (cat) {
+        var items = window.SECTIONS.filter(function (s) {
+          if (s.cat !== cat) return false;
+          if (active !== "all" && s.cat !== active) return false;
+          if (q && s.name.indexOf(q) === -1 && s.short.indexOf(q) === -1) return false;
+          return true;
+        });
+        if (!items.length) return;
+        html += '<section class="cat-block"><h2>' + labels[cat] + '</h2><div class="sec-grid">' +
+          items.map(cardHtml).join("") + "</div></section>";
+      });
+      root.innerHTML = html || '<p class="empty">لا توجد نتائج مطابقة.</p>';
+    }
+
+    filters.addEventListener("click", function (e) {
+      var btn = e.target.closest(".filter");
+      if (!btn) return;
+      active = btn.getAttribute("data-filter");
+      filters.querySelectorAll(".filter").forEach(function (b) {
+        b.classList.toggle("active", b === btn);
+      });
+      render();
+    });
+    search.addEventListener("input", render);
+    render();
+  </script>
+</body>
+</html>
